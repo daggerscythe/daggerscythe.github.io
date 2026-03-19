@@ -1,1 +1,1 @@
-# daggerscythe.github.io
+This is my portfolio website where I host and display some of my apps and games I have made
