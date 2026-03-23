@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery - Dani Zhumasheva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="index.html">YN.</a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">about</a></li>
+      <li><a href="index.html#projects">projects</a></li>
+      <li><a href="index.html#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-wrapper">
+
+    <div class="page-header">
+      <p class="section-label">// screenshots</p>
+      <h1 class="section-title">Gallery</h1>
+      <p class="page-desc">A visual showcase of my apps and game demos.</p>
+    </div>
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — The Daily Guilt Trip
+         Add/remove item - <div class="slide">
+         Add slides - <img src="..." alt="..." />
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" id="habit">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">The Daily Guilt Trip</h2>
+        <span class="gallery-block-meta">mobile · flutter</span>
+      </div>
+
+      <div class="slideshow phone" id="slideshow-habit">
+        <div class="slides-track">
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/completion.gif" alt="Habit Completion" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/dashboard.png" alt="Dashboard" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/edithabit.png" alt="Edit Habit" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/habits.png" alt="Habits" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/leaderboard.png" alt="Leaderboard" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/login.png" alt="Login Page" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/monthlyview.png" alt="Monthly View" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/the-daily-guilt-trip/sidemenu.png" alt="Sidemenu" />
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 8</div>
+      </div>
+
+      <div class="slide-dots" id="dots-habit"></div>
+    </div>
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — Bankruptcy Simulator
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" id="expense">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Bankruptcy Simulator</h2>
+        <span class="gallery-block-meta">mobile · flutter</span>
+      </div>
+
+      <div class="slideshow phone" id="slideshow-expense">
+        <div class="slides-track">
+
+          <div class="slide">
+            <img src="screenshots/bankruptcy-simulator/piechart.png" alt="Piechart" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/bankruptcy-simulator/categories.png" alt="Cateories" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/bankruptcy-simulator/logbook.png" alt="Logbook" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/bankruptcy-simulator/login.png" alt="Login Page" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/bankruptcy-simulator/barchart.png" alt="Barchart" />
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 5</div>
+      </div>
+
+      <div class="slide-dots" id="dots-habit"></div>
+    </div>
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — CS2 Skins
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" id="cs2skins">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Counter-Strike 2 Skins Database</h2>
+        <span class="gallery-block-meta">web · PHP · SQL</span>
+      </div>
+
+      <div class="slideshow landscape" id="slideshow-cs2skins">
+        <div class="slides-track">
+
+          <div class="slide">
+            <img src="screenshots/cs2-skins/listskins.png" alt="List Skins" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/cs2-skins/addskin.png" alt="Add a Skin" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/cs2-skins/updateskin.png" alt="Update a Skin" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/cs2-skins/aggregatequery.png" alt="Aggregate Query" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/cs2-skins/ERDextended.png" alt="ERD" />
+          </div>
+
+        </div>
+
+        <!-- Arrows -->
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 6</div>
+      </div>
+
+      <div class="slide-dots" id="dots-habit"></div>
+    </div>
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — Game/Desktop (landscape)
+         Use class="slideshow landscape" for 16:9
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" style="animation-delay: 0.4s;">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Game Demo</h2>
+        <span class="gallery-block-meta">game · flutter · flame</span>
+      </div>
+
+      <div class="slideshow landscape" id="slideshow-game">
+        <div class="slides-track">
+
+          <div class="slide">
+            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-01.png</span>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-02.png</span>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 2</div>
+      </div>
+
+      <div class="slide-dots" id="dots-game"></div>
+    </div>
+
+    <!-- Add more gallery blocks by duplicating the pattern above -->
+
+  </div><!-- end page-wrapper -->
+
+  <footer>
+    <p>© 2026 <span class="footer-accent">Your Name</span>. Built with HTML & CSS.</p>
+    <p>Hosted on <span class="footer-accent">GitHub Pages</span>.</p>
+  </footer>
+
+  <script>
+
+    function initSlideshow(id) {
+      const slideshow  = document.getElementById(`slideshow-${id}`);
+      const track      = slideshow.querySelector('.slides-track');
+      const slides     = track.querySelectorAll('.slide');
+      const counter    = slideshow.querySelector('.slide-counter');
+      const dotsWrap   = document.getElementById(`dots-${id}`);
+      const total      = slides.length;
+      let current      = 0;
+
+      // Build dots
+      slides.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+      });
+
+      function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        counter.textContent = `${current + 1} / ${total}`;
+        dotsWrap.querySelectorAll('.dot').forEach((d, i) =>
+          d.classList.toggle('active', i === current)
+        );
+      }
+
+      slideshow.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
+      slideshow.querySelector('.next').addEventListener('click', () => goTo(current + 1));
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft')  goTo(current - 1);
+        if (e.key === 'ArrowRight') goTo(current + 1);
+      });
+
+      // Touch swipe
+      let touchStartX = 0;
+      slideshow.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
+      slideshow.addEventListener('touchend',   e => {
+        const diff = touchStartX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+      });
+
+      goTo(0);
+    }
+
+    initSlideshow('habit');
+    initSlideshow('game');
+    // Call initSlideshow('your-id') for each new block you add
+  </script>
+
+</body>
+</html>
