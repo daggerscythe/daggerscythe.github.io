@@ -600,6 +600,16 @@ footer p {
   background: var(--surface2);
 }
 
+.slideshow.phone {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.slideshow.landscape {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .slideshow.phone .slide {
   aspect-ratio: 9/19.5;
   max-height: 70vh;
