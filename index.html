@@ -210,6 +210,21 @@
                 </div>
             </div>
 
+            <div class="project-card reveal" data-category="web">
+                <div class="card-thumb">
+                    <img src="screenshots/thumbnails/portfolio.png" alt="My Portfolio Website" />
+                    <span class="card-category cat-web">Web</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">My Portfolio Website</h3>
+                    <p class="card-desc">Portfolio website to showcase my projects, you're using it right now <i class="far fa-smile"></i></p>
+                    <div class="card-stack">
+                        <span class="stack-tag">HTML</span>
+                        <span class="stack-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+
             <!-- DESKTOP APPS -->
             <div class="project-card reveal" data-category="desktop">
                 <div class="card-thumb">
@@ -232,9 +247,9 @@
                         <span class="stack-tag">PyQT5</span>
                     </div>
                     <div class="card-actions">
-                        <a href="javascript:void(0)" class="card-btn primary" onclick=showToast()>Video Demo</a>
+                        <a href="gallery.html#steam-lib-sort-demo" class="card-btn primary">Video Demo</a>
                         <a href="javascript:void(0)" class="card-btn" onclick=showToast()>GitHub</a>
-                        <a href="javascript:void(0)" class="card-btn" onclick=showToast()>Download EXE</a>
+                        <a href="exes/steam-library-sorter.exe" class="card-btn" download>Download EXE</a>
                     </div>
                 </div>
             </div>
@@ -262,11 +277,13 @@
                     </div>
                     <div class="card-actions">
                         <a href="games/chicken-warrior/" class="card-btn primary" target="_blank">Play Demo</a>
-                        <a href="javascript:void(0)" class="card-btn" onclick=showToast()>Screenshots</a>
+                        <a href="gallery.html#chicken-warrior" class="card-btn">Screenshots</a>
+                        <a href="gallery.html#chicken-warrior-demo" class="card-btn">Video Demo</a>
                         <a href="https://github.com/daggerscythe/chicken-game" class="card-btn" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
+
             <div class="project-card reveal" data-category="game">
                 <div class="card-thumb">
                     <img src="screenshots/thumbnails/codemiss.png" alt="Code Miss" />
@@ -293,8 +310,41 @@
                     </div>
                     <div class="card-actions">
                         <a href="javascript:void(0)" class="card-btn primary" onclick=showToast()>Play Demo</a>
-                        <a href="javascript:void(0)" class="card-btn" onclick=showToast()>Screenshots</a>
+                        <a href="gallery.html#code-miss" class="card-btn">Screenshots</a>
+                        <a href="gallery.html#code-miss-demo" class="card-btn">Video Demo</a>
                         <a href="javascript:void(0)" class="card-btn" onclick=showToast()>GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" data-category="game">
+                <div class="card-thumb">
+                    <img src="screenshots/thumbnails/goliath.png" alt="Slaying Goliath" />
+                    <span class="card-category cat-game">Game</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Slaying Goliath</h3>
+                    <p class="card-desc">This browser-based 3D multiplayer game was developed in under 
+                        24 hours during the University of Mississippi's Hackathon 2026. 
+                        It was rendered using A-Frame and programmed with JavaScript, using 
+                        Git for version control. We used WebSockets to add a multiplayer feature, and 
+                        designed a class-based combat system across 7 classes with distinct stat multipliers
+                        parsed from a 780-character CSV dataset, cooldwn tracking, and role-specific abilities.
+                        I was part of a 4-memeber team, and I was responsible for the main gameplay loop, mechanics,
+                        & scripting, as well as generating 3D models using Three.js. Three players play as heroes
+                        working together to defeat a villain, who is controlled by a fourth player.
+                    </p>
+                    <div class="card-stack">
+                        <span class="stack-tag">A-Frame</span>
+                        <span class="stack-tag">JavaScript</span>
+                        <span class="stack-tag">Three.js</span>
+                        <span class="stack-tag">HTML</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="javascript:void(0)" class="card-btn primary" onclick=showToast()>Play Demo</a>
+                        <a href="gallery.html#slaying-goliath" class="card-btn">Screenshots</a>
+                        <a href="gallery.html#slaying-goliath-demo" class="card-btn">Video Demo</a>
+                        <a href="github.com/daggerscythe/hackathon2026" class="card-btn" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>

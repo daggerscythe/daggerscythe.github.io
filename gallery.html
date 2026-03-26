@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - Dani Zhumasheva</title>
+  <title>Dani's Project Gallery</title>
+  <link rel="icon" href="logo.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="style.css" /> 
@@ -32,8 +33,6 @@
 
     <!-- ─────────────────────────────────────────
          GALLERY BLOCK — The Daily Guilt Trip
-         Add/remove item - <div class="slide">
-         Add slides - <img src="..." alt="..." />
     ───────────────────────────────────────────── -->
     <div class="gallery-block" id="habit">
       <div class="gallery-block-header">
@@ -139,6 +138,200 @@
     </div>
 
     <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — Chicken Warrior
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" style="animation-delay: 0.4s;" id="chicken-warrior">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Chicken Warrior</h2>
+        <span class="gallery-block-meta">game · flutter · flame</span>
+      </div>
+
+      <div class="slideshow landscape" id="slideshow-chicken-warrior">
+        <div class="slides-track">
+
+          <div class="slide">
+            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-01.png</span>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-02.png</span>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 2</div>
+      </div>
+
+      <div class="slide-dots" id="dots-chicken-warrior"></div>
+    </div>
+
+    <div class="gallery-video" id="chicken-warrior-demo">
+      <video controls poster="screenshots/thumbnails/chicken.png">
+        <source src="videos/chicken_warrior_demo.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — Slaying Goliath
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" style="animation-delay: 0.4s;" id="slaying-goliath">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Slaying Goliath</h2>
+        <span class="gallery-block-meta">game · JavaScript · A-Frame · Three.js</span>
+      </div>
+
+      <div class="slideshow landscape" id="slideshow-slaying-goliath">
+        <div class="slides-track">
+
+          <div class="slide">
+            <img src="screenshots/slaying-goliath/main_menu.png" alt="Main Menu" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/slaying-goliath/mode_select.png" alt="Mode Select" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/slaying-goliath/character_select.png" alt="Character Select" />
+          </div>
+
+          <div class="slide">
+            <img src="screenshots/thumbnails/image_placeholder.png" alt="More Coming Soon" />
+          </div>
+
+        </div>
+
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 4</div>
+      </div>
+
+      <div class="slide-dots" id="dots-slaying-goliath"></div>
+    </div>
+
+    <div class="gallery-video" id="slaying-goliath-demo">
+      <video controls poster="screenshots/thumbnails/goliath.png">
+        <source src="videos/video_placeholder.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — Code Miss
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" style="animation-delay: 0.4s;" id="code-miss">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Code Miss</h2>
+        <span class="gallery-block-meta">game · JavaScript · A-Frame</span>
+      </div>
+
+      <div class="slideshow landscape" id="slideshow-code-miss">
+        <div class="slides-track">
+
+          <div class="slide">
+            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-01.png</span>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-02.png</span>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 2</div>
+      </div>
+
+      <div class="slide-dots" id="dots-code-miss"></div>
+    </div>
+
+    <div class="gallery-video" id="code-miss-demo">
+      <video controls poster="screenshots/thumbnails/codemiss.png">
+        <source src="videos/code_miss_demo.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- ─────────────────────────────────────────
+         GALLERY BLOCK — Steam Library Sorter
+    ───────────────────────────────────────────── -->
+    <div class="gallery-block" style="animation-delay: 0.4s;" id="steam-lib-sort">
+      <div class="gallery-block-header">
+        <h2 class="gallery-block-title">Steam Library Sorter</h2>
+        <span class="gallery-block-meta">desktop · Python · PyQt5</span>
+      </div>
+
+      <div class="slideshow landscape" id="slideshow-steam-lib-sort">
+        <div class="slides-track">
+
+          <div class="slide">
+            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-01.png</span>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="slide-placeholder">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+              <span>screenshot-02.png</span>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="slide-arrow prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="slide-arrow next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+
+        <div class="slide-counter">1 / 2</div>
+      </div>
+
+      <div class="slide-dots" id="dots-steam-lib-sort"></div>
+    </div>
+
+    <div class="gallery-video" id="steam-lib-sort-demo">
+      <video controls poster="screenshots/thumbnails/libsort.png">
+        <source src="videos/steam_lib_sort_demo.mp4" type="video/mp4" />
+      </video>
+    </div>
+    
+    <!-- ─────────────────────────────────────────
          GALLERY BLOCK — CS2 Skins
     ───────────────────────────────────────────── -->
     <div class="gallery-block" id="cs2skins">
@@ -185,50 +378,6 @@
 
       <div class="slide-dots" id="dots-cs2skins"></div>
     </div>
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK — Game/Desktop (landscape)
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" style="animation-delay: 0.4s;" id="chicken-warrior">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Chicken Warrior</h2>
-        <span class="gallery-block-meta">game · flutter · flame</span>
-      </div>
-
-      <div class="slideshow landscape" id="slideshow-chicken-warrior">
-        <div class="slides-track">
-
-          <div class="slide">
-            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-01.png</span>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-02.png</span>
-            </div>
-          </div>
-
-        </div>
-
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 2</div>
-      </div>
-
-      <div class="slide-dots" id="dots-chicken-warrior"></div>
-    </div>
-
-    <!-- Add more gallery blocks by duplicating the pattern above -->
 
   </div><!-- end page-wrapper -->
 
