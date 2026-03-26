@@ -711,12 +711,20 @@ footer p {
   border-radius: var(--radius);
   overflow: hidden;
   background: var(--surface);
+  margin-bottom: 48px;
 }
 
 .gallery-video video {
   width: 100%;
   display: block;
   aspect-ratio: 16/9;
+}
+
+.gallery-video iframe {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16/9;
+  border: none;
 }
 
 /* ── RESPONSIVE ── */
