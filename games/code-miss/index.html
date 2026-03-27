@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code City</title>
+    <style>
+        #timer {
+           position: fixed;
+           top: 20px;
+           left: 50%;
+           transform: translateX(-50%);
+           font-size: 2em; 
+           color: #4CAF50; /* Green for a positive vibe */
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+           z-index: 1000; 
+           font-family: "Orbitron", sans-serif; /* Futuristic font */
+           background-color: rgba(0, 0, 0, 0.7);
+           padding: 10px 20px;
+           border-radius: 10px;
+           border: 2px solid #4CAF50;
+        }
+        #joinedCounter {
+             position: fixed;
+             top: 90px; 
+             left: 50%;
+             transform: translateX(-50%);
+             font-size: 1.5em;
+             color: #FFD700; /* Gold for emphasis */
+             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+             z-index: 1000;
+             font-family: "Orbitron", sans-serif;
+             background-color: rgba(0, 0, 0, 0.7);
+             padding: 10px 20px;
+             border-radius: 10px;
+             border: 2px solid #FFD700;
+        }    
+        #crosshair {
+             position: fixed;
+             top: 50%;
+             left: 50%;
+             width: 12px; 
+             height: 12px;
+             background-color: transparent; 
+             border: 2px solid white;
+             border-radius: 50%;
+             transform: translate(-50%, -50%);
+             z-index: 1000;
+             box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        #crosshair::before,
+        #crosshair::after {
+            content: "";
+            position: absolute;
+            background-color: white;
+        }
+        #crosshair::before {
+            width: 2px;
+            height: 8px;
+            top: 2px;
+            left: 5px;
+        }
+        #crosshair::after {
+            width: 8px;
+            height: 2px;
+            top: 5px;
+            left: 2px;
+        }
+        #text-box-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            font-family: "Orbitron", sans-serif;
+            z-index: 1001;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid #4CAF50;
+        }
+        #text-box-container input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        #text-box-container input:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        }
+        #text-box-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #text-box-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+ 
+     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/OBJLoader.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/aframe-extras@6.1.1/dist/aframe-extras.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/aframe-physics-system@4.0.1/dist/aframe-physics-system.min.js"></script>
+     <script src="intro.js" defer></script>
+     <script src="gameLogic.js"></script>
+     <script src="characterInteraction.js"></script>
+ 
+  </head>
+  <body>
+    <div id="timer">Time Left: 180s</div>
+    <div id="joinedCounter">People Joined: 0/3</div> 
+    <div id="crosshair"></div>
+    <a-scene physics="debug: false;">
+      <a-entity id="player" position="0 1.6 1" movement-controls>
+        <a-entity camera look-controls="pointerLockEnabled: true; reverseMouseDrag: false" wasd-controls raycaster="objects: .clickable; far: 15; direction: 0 0 -1;" cursor="rayOrigin: mouse; fuse: false">
+        </a-entity>
+      </a-entity>
+      <!-- Fade start -->
+      <a-entity id="fadeOverlay" geometry="primitive: plane; width: 10; height: 10" material="color: black; opacity: 1" position="0 2 -1"></a-entity>
+      <!-- Title -->
+      <a-text id="gameTitle" 
+        value="CODE MISS" 
+        position="1.9 1.6 0"
+        color="white" 
+        anchor="center" 
+        scale="1 1 1"
+        visible="true">   
+      </a-text>
+      <!-- Sky -->
+      <a-sky id="sky" src="url(models/textures/sky.jpg)"></a-sky>
+      <!-- Ground -->
+      <a-plane id="ground" src="url(models/textures/ground.jpg)" position="0 0 0" rotation="-90 0 0" width="50" height="50"></a-plane>
+      <!-- Weir -->
+      <a-entity id="weir" obj-model="obj: url(models/weir.obj); mtl: url(models/weir.mtl)" scale="10 10 10" position="0 0 -10"></a-entity>
+    </a-scene>
+  </body>
+</html>
+ 
+<script>
+  const loader = new THREE.OBJLoader();
+  loader.load('models/weir.obj', function (object) {
+    console.log('Model loaded');}, undefined, function (error) {
+      console.error('Error loading model:', error);
+    });
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("Game Loaded");
+    let scene = document.querySelector("a-scene");
+    let player = document.createElement("a-entity");
+    player.setAttribute("position", "0 1.6 0");
+    player.setAttribute("movement-controls", "");
+    player.setAttribute("wasd-controls", "");
+    player.innerHTML = `<a-camera></a-camera>`; 
+    scene.appendChild(player);
+  });
+</script>
