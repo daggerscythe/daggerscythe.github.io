@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FantasyX | Dani Zhumasheva</title>
+    <meta name="description" content="What I built on FantasyX, a weekly re-draft fantasy football platform live on the App Store: Flutter client, Postgres rules engine, serverless backend and store compliance." />
+    <meta property="og:title" content="FantasyX | Dani Zhumasheva" />
+    <meta property="og:description" content="A weekly re-draft fantasy football platform built solo in Flutter and Supabase, live on the App Store." />
+    <meta property="og:image" content="screenshots/fantasyx/fx-og-card.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="logo.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="index.html">DZ.</a>
+        <ul class="nav-links">
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#projects">projects</a></li>
+            <li><a href="fantasyx.html">fantasyx</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="index.html#contact">contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <header class="case-hero">
+        <div class="case-hero-inner">
+            <p class="featured-eyebrow">
+                <span class="featured-live-dot"></span>
+                About the App · Solo build · Shipped
+            </p>
+
+            <img src="screenshots/fantasyx/fantasyx-logo-transparent.svg" alt="FantasyX" class="case-logo" />
+
+            <h1 class="case-hero-tagline">Win the Week. <em>Survive the Season.</em></h1>
+
+            <p class="case-hero-lede">
+                FantasyX is a weekly re-draft fantasy football platform, live on the App Store. I did not come
+                up with the concept. I built it: the Flutter client for iOS, Android and web, the Postgres
+                schema and its stored procedures, 30 serverless edge functions, the realtime draft engine, the
+                Python data pipeline, the store compliance work, and the marketing site, all of it solo.
+            </p>
+
+            <div class="case-meta">
+                <div class="case-meta-item">
+                    <span class="case-meta-label">Role</span>
+                    <span class="case-meta-value">Co-founder · Sole engineer</span>
+                </div>
+                <div class="case-meta-item">
+                    <span class="case-meta-label">Timeline</span>
+                    <span class="case-meta-value">Apr 2026 to present</span>
+                </div>
+                <div class="case-meta-item">
+                    <span class="case-meta-label">Build targets</span>
+                    <span class="case-meta-value">iOS · Android · Web</span>
+                </div>
+                <div class="case-meta-item">
+                    <span class="case-meta-label">Status</span>
+                    <span class="case-meta-value">v1.1.3 · iOS live, Android in beta</span>
+                </div>
+            </div>
+
+            <div class="featured-actions">
+                <a href="https://apps.apple.com/us/app/fantasyx/id6791657044" class="fx-btn gold" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-app-store-ios"></i> Download on the App Store
+                </a>
+                <a href="https://fantasyx.net" class="fx-btn" target="_blank" rel="noopener">
+                    <i class="fa-solid fa-globe"></i> fantasyx.net
+                </a>
+                <a href="index.html#projects" class="fx-btn">← Back to projects</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- JUMP BAR -->
+    <div class="case-jump">
+        <ul>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#scope">What I Built</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+            <li><a href="#problems">Hard Problems</a></li>
+            <li><a href="#numbers">The Numbers</a></li>
+        </ul>
+    </div>
+
+    <div class="case-body">
+
+        <!-- SHOWCASE -->
+        <section class="case-section" id="showcase">
+            <p class="case-section-label">Showcase</p>
+            <h2 class="case-section-title">The app itself</h2>
+
+            <p class="case-p">
+                Screens from the shipped iOS build. Hover to pause, and click any screen to view it full size.
+            </p>
+
+            <div class="carousel" id="fx-carousel">
+                <div class="carousel-track">
+                    <img src="screenshots/fantasyx/fx-01-hero.webp" alt="Weekly roster screen with drag-and-drop lineup slots" data-i="0" />
+                    <img src="screenshots/fantasyx/fx-02-redraft.webp" alt="Live draft room with the pick clock and player pool" data-i="1" />
+                    <img src="screenshots/fantasyx/fx-03-graveyard.webp" alt="Player graveyard listing locked-out players by week" data-i="2" />
+                    <img src="screenshots/fantasyx/fx-04-revives.webp" alt="Revive rules and earned achievements" data-i="3" />
+                    <img src="screenshots/fantasyx/fx-05-start-anytime.webp" alt="Week switcher over the draft room" data-i="4" />
+                    <img src="screenshots/fantasyx/fx-06-everything.webp" alt="League standings and hub tabs" data-i="5" />
+                    <img src="screenshots/fantasyx/fx-01-hero.webp" alt="" data-i="0" data-clone="1" aria-hidden="true" tabindex="-1" />
+                    <img src="screenshots/fantasyx/fx-02-redraft.webp" alt="" data-i="1" data-clone="1" aria-hidden="true" tabindex="-1" />
+                    <img src="screenshots/fantasyx/fx-03-graveyard.webp" alt="" data-i="2" data-clone="1" aria-hidden="true" tabindex="-1" />
+                    <img src="screenshots/fantasyx/fx-04-revives.webp" alt="" data-i="3" data-clone="1" aria-hidden="true" tabindex="-1" />
+                    <img src="screenshots/fantasyx/fx-05-start-anytime.webp" alt="" data-i="4" data-clone="1" aria-hidden="true" tabindex="-1" />
+                    <img src="screenshots/fantasyx/fx-06-everything.webp" alt="" data-i="5" data-clone="1" aria-hidden="true" tabindex="-1" />
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCEPT -->
+        <section class="case-section" id="concept">
+            <p class="case-section-label">Concept</p>
+            <h2 class="case-section-title">Why it was worth building</h2>
+
+            <p class="case-p">
+                FantasyX re-drafts every roster every week, and players a manager has already used are locked
+                out of their pool for the rest of the season. That changes the engineering problem more than it
+                changes the game. A season-long fantasy app runs one draft per league per year; this one runs a
+                live, timed, multiplayer draft room every week for every league, and every started player has to
+                be tracked against a permanent per-team exclusion list that drafting, waivers, trades and lineup
+                validation all have to respect. What is normally a once-a-year showpiece became the most used
+                and most concurrency-sensitive surface in the product, which is why most of the work below sits
+                in the database rather than the client. The full product tour is at
+                <a href="https://fantasyx.net" target="_blank" rel="noopener">fantasyx.net</a>.
+            </p>
+        </section>
+
+        <!-- 02 SCOPE -->
+        <section class="case-section" id="scope">
+            <p class="case-section-label">What I Built</p>
+            <h2 class="case-section-title">What I actually built</h2>
+
+            <p class="case-p">
+                I am the only engineer on this project. The product direction is the company's; everything
+                below is the engineering I did to realize it.
+            </p>
+
+            <div class="case-grid">
+                <div class="case-card">
+                    <span class="case-card-icon">📐</span>
+                    <h4 class="case-card-title">Game rules, in code</h4>
+                    <p class="case-card-desc">Turned the product spec into an enforceable rule set: the graveyard's exact lock semantics, the revive economy, scoring and roster legality, and the commissioner configuration surface. Deciding how each rule is represented and enforced was the engineering problem.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">🎨</span>
+                    <h4 class="case-card-title">UI implementation</h4>
+                    <p class="case-card-desc">Built all 51 screens and the design system underneath them: a semantic, theme-aware color palette with full light and dark modes, and per-NFL-team color tokens.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">📱</span>
+                    <h4 class="case-card-title">Flutter client</h4>
+                    <p class="case-card-desc">A single codebase targeting iOS, Android and web. Around 45,000 lines of Dart across 359 files, organized feature-first with Riverpod for state and go_router for routing and deep links.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">🗄️</span>
+                    <h4 class="case-card-title">Database & backend</h4>
+                    <p class="case-card-desc">A 46-table Postgres schema on Supabase with row level security, 99 stored procedures holding the game rules, triggers, and 30 Deno edge functions for scheduled and privileged work.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">🔄</span>
+                    <h4 class="case-card-title">Data pipeline</h4>
+                    <p class="case-card-desc">Python tooling (about 12,000 lines) that seeds players, schedules, projections, injuries, odds and news, computes fantasy scoring, and can simulate an entire week or fast-forward a season for testing.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">🚀</span>
+                    <h4 class="case-card-title">Shipping & compliance</h4>
+                    <p class="case-card-desc">App Store submission and review (live), Android currently in closed beta, plus privacy policy and terms, a 13+ age gate, GDPR-style data export and account deletion, moderation tooling, push infrastructure, and a Cloudflare-hosted marketing site.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ARCHITECTURE -->
+        <section class="case-section" id="architecture">
+            <p class="case-section-label">Architecture</p>
+            <h2 class="case-section-title">How I put it together</h2>
+
+            <p class="case-p">
+                The guiding rule is that <strong>the game rules live in the database, not the client</strong>.
+                Anything a user could cheat by tampering with the app is enforced in a Postgres function the
+                client calls. The Flutter app is a fast view over that authority, never the source of truth.
+            </p>
+
+            <div class="case-stack">
+                <div class="stack-layer">
+                    <div class="stack-layer-name">Client</div>
+                    <div class="stack-layer-body"><strong>Flutter and Dart</strong>, one codebase for iOS, Android and web. Riverpod for state, go_router for routing and deep links, and a feature-first structure where each feature owns its models, pages, providers, repositories and widgets. No widget issues a query; everything goes through a repository layer.</div>
+                </div>
+                <div class="stack-layer">
+                    <div class="stack-layer-name">Rules engine</div>
+                    <div class="stack-layer-body"><strong>99 Postgres stored procedures.</strong> Drafting, autopick, lineup validation, waiver processing, trade finalization, revive grants, playoff seeding, account deletion and data export all run server-side with their own guards.</div>
+                </div>
+                <div class="stack-layer">
+                    <div class="stack-layer-name">Data</div>
+                    <div class="stack-layer-body"><strong>Postgres on Supabase, 46 tables</strong> with row level security, plus realtime subscriptions driving the live draft room, league chat and live scoring.</div>
+                </div>
+                <div class="stack-layer">
+                    <div class="stack-layer-name">Serverless</div>
+                    <div class="stack-layer-body"><strong>30 Deno edge functions</strong> on scheduled crons for everything timed or privileged: draft start and autopick, waiver processing, week rollover, score and news polling, push delivery, email, and data export.</div>
+                </div>
+                <div class="stack-layer">
+                    <div class="stack-layer-name">Pipeline</div>
+                    <div class="stack-layer-body"><strong>Python</strong> tooling that seeds players, schedules, projections, injuries and news, computes fantasy scoring, and can simulate a week or fast-forward a season, which is what made the playoff and season-end flows testable without waiting on real games.</div>
+                </div>
+                <div class="stack-layer">
+                    <div class="stack-layer-name">Platform</div>
+                    <div class="stack-layer-body"><strong>Firebase Cloud Messaging</strong> for push, <strong>Crashlytics</strong> for crash reporting, <strong>PostHog</strong> for opt-in analytics, <strong>Brevo</strong> for email, and <strong>Cloudflare Workers</strong> hosting the marketing site.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPLIANCE -->
+        <section class="case-section" id="compliance">
+            <p class="case-section-label">Compliance &amp; Launch</p>
+            <h2 class="case-section-title">Getting it through review</h2>
+
+            <p class="case-p">
+                Shipping to the App Store was a real engineering project, not a form to fill in. What I built
+                for it:
+            </p>
+
+            <ul class="case-ul">
+                <li class="case-li"><strong>A 13+ age gate</strong> rendered above the router so no route or back gesture escapes it, since neither Apple nor Google shares a birthday with the app. Answering under 13 deletes the account, and the refusal is remembered on-device so it cannot be immediately re-rolled.</li>
+                <li class="case-li"><strong>Automated data export.</strong> An edge function assembles one JSON document server-side, writes it to a private bucket and emails a signed link that expires in seven days, rate limited per account. A second function purges the file at expiry.</li>
+                <li class="case-li"><strong>Account deletion that does not corrupt a league.</strong> Personal data is destroyed while shared league records are de-identified, unplayed matchups become byes, and commissioned leagues pass to another manager, so other members' history survives.</li>
+                <li class="case-li"><strong>Native Apple sign-in</strong> rebuilt for App Review, with Google moved to an in-app Safari view on iOS while Android and web keep the browser flow.</li>
+                <li class="case-li"><strong>A full AdMob integration built and then removed</strong> before 1.0. Dropping the dependency also removed the advertising-ID permission it pulled into the merged Android manifest, so the Play data-safety declaration is accurate. The code is preserved out of tree with a documented restore path.</li>
+            </ul>
+        </section>
+
+        <!-- PROBLEMS -->
+        <section class="case-section" id="problems">
+            <p class="case-section-label">Hard Problems</p>
+            <h2 class="case-section-title">Challenges I ran into during development</h2>
+
+            <div class="case-grid">
+                <div class="case-card">
+                    <span class="case-card-icon">&#128274;</span>
+                    <h4 class="case-card-title">Trusting no client</h4>
+                    <p class="case-card-desc">Every rule that could be cheated lives in a Postgres function. The client's job is to explain a refusal well, never to enforce it.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">&#9201;</span>
+                    <h4 class="case-card-title">Time as correctness</h4>
+                    <p class="case-card-desc">Draft windows, kickoff locks, waiver periods and bracket weeks all had to agree. Collapsing a league into an explicit state machine keyed on two fields is what made the edge cases tractable.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">&#128257;</span>
+                    <h4 class="case-card-title">Idempotent scheduled jobs</h4>
+                    <p class="case-card-desc">Rollover, revive grants and waiver processing run on crons that can retry. Ledger tables and de-duplication keys mean a job that runs twice never double-pays.</p>
+                </div>
+                <div class="case-card">
+                    <span class="case-card-icon">&#129517;</span>
+                    <h4 class="case-card-title">Single sources of truth</h4>
+                    <p class="case-card-desc">Live and final state come from one shared model property, so the dashboard, the league tab and the matchup page can never disagree about whether a game is over.</p>
+                </div>
+            </div>
+
+            <p class="case-p">
+                A meaningful share of the work came out of a real beta rather than from planning: a ranking
+                overhaul to value over replacement, an autopick fallback that had been drafting practice-squad
+                players at random, draft board ordering, search and sort behavior, a late-join flow and a
+                live-scoring null bug all came from beta reports and shipped across 1.1.0 to 1.1.3.
+            </p>
+        </section>
+
+        <!-- 12 NUMBERS -->
+        <section class="case-section" id="numbers">
+            <p class="case-section-label">The Numbers</p>
+            <h2 class="case-section-title">Scale of the build</h2>
+
+            <div class="case-numbers">
+                <div class="case-num">
+                    <div class="case-num-val">45,610</div>
+                    <div class="case-num-label">Lines of Dart</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">359</div>
+                    <div class="case-num-label">Dart files</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">51</div>
+                    <div class="case-num-label">App screens</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">145</div>
+                    <div class="case-num-label">Custom widgets</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">46</div>
+                    <div class="case-num-label">Database tables</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">99</div>
+                    <div class="case-num-label">Postgres RPCs</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">30</div>
+                    <div class="case-num-label">Edge functions</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">10,601</div>
+                    <div class="case-num-label">Lines of SQL</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">12,055</div>
+                    <div class="case-num-label">Lines of Python</div>
+                </div>
+                <div class="case-num">
+                    <div class="case-num-val">3</div>
+                    <div class="case-num-label">Target platforms</div>
+                </div>
+            </div>
+
+            <h3 class="case-h3">Full stack</h3>
+            <div class="case-pills">
+                <span class="case-pill">Flutter</span>
+                <span class="case-pill">Dart</span>
+                <span class="case-pill">Riverpod</span>
+                <span class="case-pill">go_router</span>
+                <span class="case-pill">Supabase</span>
+                <span class="case-pill">PostgreSQL</span>
+                <span class="case-pill">PL/pgSQL</span>
+                <span class="case-pill">Row Level Security</span>
+                <span class="case-pill">Deno</span>
+                <span class="case-pill">TypeScript</span>
+                <span class="case-pill">Python</span>
+                <span class="case-pill">Firebase Cloud Messaging</span>
+                <span class="case-pill">Crashlytics</span>
+                <span class="case-pill">PostHog</span>
+                <span class="case-pill">Brevo</span>
+                <span class="case-pill">QStash</span>
+                <span class="case-pill">Cloudflare Workers</span>
+                <span class="case-pill">Sign in with Apple</span>
+                <span class="case-pill">Google OAuth</span>
+                <span class="case-pill">local_auth biometrics</span>
+                <span class="case-pill">Git</span>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- BOTTOM CTA -->
+    <section class="case-cta">
+        <h2>See it for yourself</h2>
+        <p>FantasyX is live on the App Store, in closed beta on Android, and still in active development.</p>
+        <div class="case-cta-actions">
+            <a href="https://apps.apple.com/us/app/fantasyx/id6791657044" class="fx-btn gold" target="_blank" rel="noopener">
+                <i class="fa-brands fa-app-store-ios"></i> Download on the App Store
+            </a>
+            <a href="https://fantasyx.net" class="fx-btn" target="_blank" rel="noopener">
+                <i class="fa-solid fa-globe"></i> fantasyx.net
+            </a>
+            <a href="index.html#contact" class="fx-btn">Get in touch →</a>
+        </div>
+    </section>
+
+    <!-- ATTRIBUTION -->
+    <p class="case-attribution">
+        FantasyX is a product of FantasyX Inc. I am a co-founder and the sole engineer.
+        All rights to the product and its intellectual property belong to the company.
+        This page describes my engineering contribution to it.
+    </p>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span class="footer-accent">Dani Zhumasheva</span>. Built with HTML &amp; CSS.</p>
+        <p>Hosted on <span class="footer-accent">GitHub Pages</span>.</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer">
+        <button class="lb-close" aria-label="Close">✕</button>
+        <button class="lb-nav prev" aria-label="Previous">‹</button>
+        <img id="lb-img" src="" alt="" />
+        <button class="lb-nav next" aria-label="Next">›</button>
+        <p class="lb-caption"><span id="lb-count"></span></p>
+    </div>
+
+    <script>
+        (function () {
+            const all = Array.from(document.querySelectorAll('.carousel img'));
+            if (!all.length) return;
+
+            // the track is duplicated for a seamless loop, so index by data-i
+            const shots = [];
+            all.forEach(im => { const n = +im.dataset.i; if (!shots[n]) shots[n] = im; });
+
+            const box   = document.getElementById('lightbox');
+            const img   = document.getElementById('lb-img');
+            const count = document.getElementById('lb-count');
+            let i = 0;
+
+            function show(n) {
+                i = (n + shots.length) % shots.length;
+                const s = shots[i];
+                img.src = s.src;
+                img.alt = s.alt;
+                count.textContent = (i + 1) + ' / ' + shots.length;
+            }
+
+            function open(n) {
+                show(n);
+                box.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function close() {
+                box.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            all.forEach(im => im.addEventListener('click', () => open(+im.dataset.i)));
+
+            box.querySelector('.lb-close').addEventListener('click', close);
+            box.querySelector('.prev').addEventListener('click', e => { e.stopPropagation(); show(i - 1); });
+            box.querySelector('.next').addEventListener('click', e => { e.stopPropagation(); show(i + 1); });
+            box.addEventListener('click', e => { if (e.target === box || e.target === img) close(); });
+
+            document.addEventListener('keydown', e => {
+                if (!box.classList.contains('open')) return;
+                if (e.key === 'Escape')     close();
+                if (e.key === 'ArrowLeft')  show(i - 1);
+                if (e.key === 'ArrowRight') show(i + 1);
+            });
+        })();
+    </script>
+
+</body>
+</html>

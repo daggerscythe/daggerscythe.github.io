@@ -23,13 +23,13 @@
     border-radius:8px; max-width:480px; width:100%; padding:40px;
     font-family:var(--font-body); text-align:center;
   ">
-    <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:16px;">// heads up</p>
+    <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:16px;">Heads up</p>
     <h2 style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:16px;">Still Cooking 🍳</h2>
     <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:12px;">
       Welcome to my portfolio! I'm still uploading files, fixing things, and pretending I know what I'm doing.
     </p>
     <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:32px;">
-      Some demos or downloads might not be available yet — but check back soon, I promise I'm working on it (probably).
+      Some demos or downloads might not be available yet, but check back soon, I promise I'm working on it (probably).
     </p>
     <button onclick="document.getElementById('wip-overlay').style.display='none'" style="
       background:var(--accent); color:#000;
@@ -55,6 +55,7 @@
         <ul class="nav-links">
             <li><a href="#about">about</a></li>
             <li><a href="#projects">projects</a></li>
+            <li><a href="fantasyx.html">fantasyx</a></li>
             <li><a href="gallery.html">gallery</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
@@ -63,7 +64,7 @@
     <!-- HERO -->
     <section id="hero">
         <div class="hero-grid-bg"></div>
-        <p class="hero-tag">// available for work</p>
+        <p class="hero-tag">Available for work</p>
         <h1 class="hero-name">
             Dani<br /><span>Zhumasheva</span>
         </h1>
@@ -85,7 +86,7 @@
     <!-- ABOUT -->
     <section id="about">
         <div class="reveal">
-            <p class="section-label">// 01: about</p>
+            <p class="section-label">About</p>
             <h2 class="section-title">Who I am</h2>
             <p class="about-bio">
                 I'm a full-stack <strong>software developer</strong> focused on
@@ -150,8 +151,119 @@
     <!-- PROJECTS -->
     <section id="projects">
         <div class="reveal">
-            <p class="section-label">// 02: Work</p>
+            <p class="section-label">Work</p>
             <h2 class="section-title">Projects</h2>
+        </div>
+
+        <!-- ═══ FEATURED: FantasyX ═══ -->
+        <div class="featured-project reveal">
+            <div class="featured-inner">
+                <div>
+                    <p class="featured-eyebrow">
+                        <span class="featured-live-dot"></span>
+                        Live on the App Store · 2026
+                    </p>
+
+                    <img src="screenshots/fantasyx/fantasyx-logo-transparent.svg" alt="FantasyX" class="featured-logo" />
+
+                    <h3 class="featured-tagline">Win the Week. <em>Survive the Season.</em></h3>
+
+                    <p class="featured-desc">
+                        A shipped, full-stack fantasy football platform built on a mechanic no other
+                        fantasy app has: <strong>every league re-drafts its entire roster every single week</strong>.
+                        Start a player and let his game play, and he is buried in your personal graveyard,
+                        locked out of your draft pool for the rest of the season. The pool thins as the
+                        season goes on, so every pick carries a permanent cost.
+                    </p>
+                    <p class="featured-desc">
+                        I am a co-founder and the sole engineer. I built the whole thing solo: the Flutter
+                        client for iOS, Android and web, the Postgres schema and its stored procedures, 30
+                        serverless edge functions, the realtime live draft engine, the scoring pipeline, the
+                        App Store and Play compliance work, and the marketing site.
+                    </p>
+
+                    <div class="featured-stack">
+                        <span class="fx-tag">Flutter</span>
+                        <span class="fx-tag">Dart</span>
+                        <span class="fx-tag">Riverpod</span>
+                        <span class="fx-tag">Supabase</span>
+                        <span class="fx-tag">PostgreSQL</span>
+                        <span class="fx-tag">Deno</span>
+                        <span class="fx-tag">Python</span>
+                        <span class="fx-tag">Firebase</span>
+                        <span class="fx-tag">Cloudflare</span>
+                    </div>
+
+                    <div class="featured-actions">
+                        <a href="fantasyx.html" class="fx-btn gold">About the app →</a>
+                        <a href="https://apps.apple.com/us/app/fantasyx/id6791657044" class="fx-btn" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-app-store-ios"></i> App Store
+                        </a>
+                        <a href="https://fantasyx.net" class="fx-btn" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-globe"></i> fantasyx.net
+                        </a>
+                    </div>
+                </div>
+
+                <div class="featured-shots">
+                    <img src="screenshots/fantasyx/fx-01-hero.webp" alt="FantasyX weekly roster screen" loading="lazy" />
+                    <img src="screenshots/fantasyx/fx-03-graveyard.webp" alt="FantasyX player graveyard screen" loading="lazy" />
+                </div>
+            </div>
+
+            <div class="featured-mechanics">
+                <div class="fx-mechanic">
+                    <div class="fx-mechanic-head">
+                        <span class="fx-mechanic-icon">⚡</span>
+                        <span class="fx-mechanic-title">Weekly Re-Draft</span>
+                    </div>
+                    <p class="fx-mechanic-desc">A live, timed draft room every week with a 20 second pick clock, realtime board, and server-side autopick.</p>
+                </div>
+                <div class="fx-mechanic">
+                    <div class="fx-mechanic-head">
+                        <span class="fx-mechanic-icon">💀</span>
+                        <span class="fx-mechanic-title">The Graveyard</span>
+                    </div>
+                    <p class="fx-mechanic-desc">Players you start and play are locked out for the season. A scarce revive economy is the only way back.</p>
+                </div>
+                <div class="fx-mechanic">
+                    <div class="fx-mechanic-head">
+                        <span class="fx-mechanic-icon">📡</span>
+                        <span class="fx-mechanic-title">Live Scoring</span>
+                    </div>
+                    <p class="fx-mechanic-desc">Polled NFL stats drive live matchup scores, win probability, and injury alerts on the dashboard.</p>
+                </div>
+                <div class="fx-mechanic">
+                    <div class="fx-mechanic-head">
+                        <span class="fx-mechanic-icon">🏆</span>
+                        <span class="fx-mechanic-title">Full Season Engine</span>
+                    </div>
+                    <p class="fx-mechanic-desc">Waivers, trades, playoffs with consolation brackets, league chat, moderation, and a trophy room.</p>
+                </div>
+            </div>
+
+            <div class="featured-stats">
+                <div class="fx-stat">
+                    <div class="fx-stat-num">45K+</div>
+                    <div class="fx-stat-label">Lines of Dart</div>
+                </div>
+                <div class="fx-stat">
+                    <div class="fx-stat-num">99</div>
+                    <div class="fx-stat-label">Postgres RPCs</div>
+                </div>
+                <div class="fx-stat">
+                    <div class="fx-stat-num">30</div>
+                    <div class="fx-stat-label">Edge Functions</div>
+                </div>
+                <div class="fx-stat">
+                    <div class="fx-stat-num">51</div>
+                    <div class="fx-stat-label">App Screens</div>
+                </div>
+                <div class="fx-stat">
+                    <div class="fx-stat-num">3</div>
+                    <div class="fx-stat-label">Platforms</div>
+                </div>
+            </div>
         </div>
 
         <div class="filter-bar reveal">
@@ -307,7 +419,7 @@
                         <a href="javascript:void(0)" class="card-btn primary" onclick=showToast()>Play Demo</a>
                         <a href="gallery.html#slaying-goliath" class="card-btn">Screenshots</a>
                         <a href="gallery.html#slaying-goliath-demo" class="card-btn">Video Demo</a>
-                        <a href="github.com/daggerscythe/hackathon2026" class="card-btn" target="_blank">GitHub</a>
+                        <a href="https://github.com/daggerscythe/hackathon2026" class="card-btn" target="_blank">GitHub</a>
                     </div>
                 </div>
             </div>
@@ -391,7 +503,7 @@
     <!-- CONTACT -->
     <section id="contact">
         <div class="reveal">
-            <p cass="section-label">// 03: contact</p>
+            <p class="section-label">Contact</p>
             <h2 class="contact-headline">Let's<br/><span class="outline">work</span><br />together.</h2>
         </div>
         <div class="contact-links reveal">
