@@ -12,41 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
 
-<!-- WIP Disclaimer -->
-<div id="wip-overlay" style="
-  position:fixed; inset:0; z-index:9999;
-  background:rgba(0,0,0,0.85); backdrop-filter:blur(6px);
-  display:flex; align-items:center; justify-content:center; padding:24px;
-">
-  <div style="
-    background:var(--surface); border:1px solid var(--border);
-    border-radius:8px; max-width:480px; width:100%; padding:40px;
-    font-family:var(--font-body); text-align:center;
-  ">
-    <p style="font-family:var(--font-mono);font-size:0.72rem;color:var(--accent);letter-spacing:0.15em;text-transform:uppercase;margin-bottom:16px;">Heads up</p>
-    <h2 style="font-family:var(--font-display);font-size:1.8rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:16px;">Still Cooking 🍳</h2>
-    <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:12px;">
-      Welcome to my portfolio! I'm still uploading files, fixing things, and pretending I know what I'm doing.
-    </p>
-    <p style="color:var(--text-muted);font-size:0.95rem;line-height:1.7;margin-bottom:32px;">
-      Some demos or downloads might not be available yet, but check back soon, I promise I'm working on it (probably).
-    </p>
-    <button onclick="document.getElementById('wip-overlay').style.display='none'" style="
-      background:var(--accent); color:#000;
-      font-family:var(--font-body); font-weight:800;
-      font-size:0.9rem; letter-spacing:0.02em;
-      border:none; border-radius:4px;
-      padding:14px 32px; cursor:pointer;
-      transition:transform 0.15s, box-shadow 0.15s;
-    "
-    onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(232,255,71,0.25)'"
-    onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'"
-    >
-      I agree to proceed with low expectations
-    </button>
-  </div>
-</div>
-
 <body>
 
     <!-- NAV -->
@@ -108,9 +73,11 @@
                         <span class="skill-tag">C/C++/C#</span>
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">SQL</span>
                         <span class="skill-tag">Dart</span>
                         <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">GDScript</span>
                     </div>
                 </div>
                 <div class="skill-group">
@@ -120,6 +87,8 @@
                         <span class="skill-tag">PyQt5</span>
                         <span class="skill-tag">Flutter</span>
                         <span class="skill-tag">A-Frame</span>
+                        <span class="skill-tag">jQuery</span>
+                        <span class="skill-tag">Godot</span>
                     </div>
                 </div>
                 <div class="skill-group">
@@ -133,6 +102,7 @@
                         <span class="skill-tag">VS Code</span>
                         <span class="skill-tag">IntelliJ</span>
                         <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Piskel</span>
                     </div>
                 </div>
                 <div class="skill-group">
@@ -142,6 +112,9 @@
                         <span class="skill-tag">Data Structures</span>
                         <span class="skill-tag">Operating Systems</span>
                         <span class="skill-tag">Algorithms</span>
+                        <span class="skill-tag">Game Design</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Web Accessibility</span>
                     </div>
                 </div>
             </div>
@@ -332,6 +305,39 @@
             <!-- GAMES -->
             <div class="project-card reveal" data-category="game">
                 <div class="card-thumb">
+                    <img src="screenshots/clam-it/clam_it_logo_1280x720.png" alt="Clam It!" />
+                    <span class="card-category cat-game">Game</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Clam It! (2D)</h3>
+                    <p class="card-desc">This 2D management game was developed solo in 2 weeks
+                        as a project for CSCI 5499B - Game Development in Fall 2026. It was built
+                        in Godot 4.7 and programmed with GDScript. You play as a pearl farmer who
+                        plants, cleans, harvests, and sells pearls while defending them from crabs.
+                        Chum makes pearls grow faster but attracts crabs, so every click is a
+                        risk-vs-reward call, and a limited supply of sonic flares is the only way to
+                        scare them off. It has a guided tutorial stage that introduces one tool per level,
+                        a freeplay mode up to Level 30, 7 pearl types based on real-world pearls with
+                        weighted drop rates, an upgrade shop, and a save system. The game was balanced
+                        through several rounds of playtesting. All sprites (drawn in Piskel) and audio
+                        were made by me. Played with mouse and keyboard.
+                    </p>
+                    <div class="card-stack">
+                        <span class="stack-tag">Godot</span>
+                        <span class="stack-tag">GDScript</span>
+                        <span class="stack-tag">Piskel</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="games/clam-it/" class="card-btn primary" target="_blank">Play Demo</a>
+                        <a href="games/clam-it/ClamIt_GDD.pdf" class="card-btn" download>Design Doc <i class="fa-solid fa-file-arrow-down"></i></a>
+                        <a href="exes/ClamIt_Windows.zip" class="card-btn" download>Download ZIP</a>
+                        <a href="https://github.com/daggerscythe/clam-it" class="card-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal" data-category="game">
+                <div class="card-thumb">
                     <img src="screenshots/thumbnails/chicken.png" alt="Chicken Warrior" />
                     <span class="card-category cat-game">Game</span>
                 </div>
@@ -425,6 +431,37 @@
             </div>
 
             <!-- WEB APPS -->
+            <div class="project-card reveal" data-category="web">
+                <div class="card-thumb">
+                    <img src="screenshots/muscle-map/muscle-map-thumbnail.png" alt="Muscle Map" />
+                    <span class="card-category cat-web">Web</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Muscle Map</h3>
+                    <p class="card-desc">This is my semester-long project for CSCI 3054 - Web Development
+                        in Fall 2026, built solo over about 6 weeks with HTML, CSS, and JavaScript (jQuery).
+                        The site answers one question: what exercise targets what muscle? You pick a muscle
+                        group on an interactive SVG anatomy map, zoom in on a specific muscle, and get a list
+                        of exercises with the equipment needed, step-by-step instructions, and a GIF demo.
+                        It was built with a mobile-first, responsive design through iterative development,
+                        and accessibility was a top priority: ARIA labels, full keyboard navigation of the
+                        map, and focus management.
+                    </p>
+                    <p class="card-note">Still in development: some features, like log in and the contact form, have not been implemented yet.</p>
+                    <div class="card-stack">
+                        <span class="stack-tag">HTML</span>
+                        <span class="stack-tag">CSS</span>
+                        <span class="stack-tag">JS</span>
+                        <span class="stack-tag">SVG</span>
+                        <span class="stack-tag">jQuery</span>
+                    </div>
+                    <div class="card-actions">
+                        <a href="websites/muscle-map/" class="card-btn primary" target="_blank" rel="noopener">Live Demo</a>
+                        <a href="https://github.com/gzhumash/gzhumash.github.io" class="card-btn" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
             <div class="project-card reveal" data-category="web">
                 <div class="card-thumb">
                     <img src="screenshots/thumbnails/skins.png" alt="Counter-Strike 2 Skins DB" />
