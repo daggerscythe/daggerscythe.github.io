@@ -3,627 +3,431 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dani's Portfolio</title>
+    <meta name="description" content="Dani Zhumasheva is a computer science student and developer building games, mobile apps, and interactive software.">
+    <title>Dani Zhumasheva — Developer & Game Maker</title>
     <link rel="icon" href="logo.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Azeret+Mono:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- NAV -->
-    <nav>
-        <a class="nav-logo" href="#hero">DZ.</a>
-        <ul class="nav-links">
-            <li><a href="#about">about</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="fantasyx.html">fantasyx</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="Dani Zhumasheva, home">
+            <span>D</span><span>Z</span>
+        </a>
+        <nav aria-label="Primary navigation">
+            <a href="#featured">Featured</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </nav>
+        <a class="header-contact" href="mailto:gulsanazhu@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+    </header>
 
-    <!-- HERO -->
-    <section id="hero">
-        <div class="hero-grid-bg"></div>
-        <p class="hero-tag">Available for work</p>
-        <h1 class="hero-name">
-            Dani<br /><span>Zhumasheva</span>
-        </h1>
-        <p class="hero-pitch">
-            Pursuing a B.S in Computer Science with a minor in eSports Management at The University of Mississippi <br />
-            (Aug 2023 - May 2027)
-        </p>
-        <div class="hero-cta">
-            <a href="Gulsana (Dani) Zhumasheva Resume.pdf" class="btn-primary" download>My Resume <i class="fa-solid fa-file-arrow-down"></i></a>
-            <a href="#projects" class="btn-primary">View Projects ↓</a>
-            <a href="#contact" class="btn-ghost">Get in touch →</a>
-        </div>
-        <div class="hero-socials">
-            <a href="https://github.com/daggerscythe" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/danizhu" target="_blank">LinkedIn</a>
-        </div>
-    </section>
-    
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="reveal">
-            <p class="section-label">About</p>
-            <h2 class="section-title">Who I am</h2>
-            <p class="about-bio">
-                I'm a full-stack <strong>software developer</strong> focused on
-                building polished, performant apps across platforms. I 
-                specialize in <strong>Flutter</strong> for mobile, web, and desktop.
-            </p>
-            <p class="about-bio">
-                I'm very passionate about gaming, game development and building
-                interactive systems. Currently developing my own game engine 
-                with C++.
-            </p>
-        </div>
-        <div class="reveal">
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h4>Languages</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++/C#</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">GDScript</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h4>Frameworks & Libraries</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenGL/OpenAL</span>
-                        <span class="skill-tag">PyQt5</span>
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">A-Frame</span>
-                        <span class="skill-tag">jQuery</span>
-                        <span class="skill-tag">Godot</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h4>Tools</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Maven</span>
-                        <span class="skill-tag">JUnit</span>
-                        <span class="skill-tag">pip</span>
-                        <span class="skill-tag">MariaDB</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">IntelliJ</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Piskel</span>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h4>Concepts</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Data Structures</span>
-                        <span class="skill-tag">Operating Systems</span>
-                        <span class="skill-tag">Algorithms</span>
-                        <span class="skill-tag">Game Design</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">Web Accessibility</span>
-                    </div>
+    <main id="main">
+        <section class="hero" id="top">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-shape hero-shape-pink" aria-hidden="true"></div>
+            <div class="hero-shape hero-shape-yellow" aria-hidden="true"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow"><span class="status-dot"></span> Computer science student · Available for opportunities</p>
+                <h1>Hi, I’m <span>Dani.</span></h1>
+                <p class="hero-intro">
+                    I build useful software<br>
+                    and <em>playful worlds.</em>
+                </p>
+                <p class="hero-copy">
+                    Full-stack developer and aspiring game developer studying at the
+                    University of Mississippi.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#featured">See my work <span aria-hidden="true">↓</span></a>
+                    <a class="button button-light" href="Gulsana (Dani) Zhumasheva Resume.pdf" download>
+                        Résumé <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects">
-        <div class="reveal">
-            <p class="section-label">Work</p>
-            <h2 class="section-title">Projects</h2>
-        </div>
-
-        <!-- ═══ FEATURED: FantasyX ═══ -->
-        <div class="featured-project reveal">
-            <div class="featured-inner">
+            <div class="hero-meta">
+                <p>Oxford, Mississippi</p>
                 <div>
-                    <p class="featured-eyebrow">
-                        <span class="featured-live-dot"></span>
-                        Live on the App Store · 2026
-                    </p>
+                    <a href="https://github.com/daggerscythe" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+                    <a href="https://linkedin.com/in/danizhu" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
 
-                    <img src="screenshots/fantasyx/fantasyx-logo-transparent.svg" alt="FantasyX" class="featured-logo" />
+        <section class="featured section-shell" id="featured">
+            <div class="section-heading reveal">
+                <p class="kicker">01 / Featured project</p>
+                <p class="section-note">The one I’m most proud of</p>
+            </div>
 
-                    <h3 class="featured-tagline">Win the Week. <em>Survive the Season.</em></h3>
-
-                    <p class="featured-desc">
-                        A shipped, full-stack fantasy football platform built on a mechanic no other
-                        fantasy app has: <strong>every league re-drafts its entire roster every single week</strong>.
-                        Start a player and let his game play, and he is buried in your personal graveyard,
-                        locked out of your draft pool for the rest of the season. The pool thins as the
-                        season goes on, so every pick carries a permanent cost.
-                    </p>
-                    <p class="featured-desc">
-                        I am a co-founder and the sole engineer. I built the whole thing solo: the Flutter
-                        client for iOS, Android and web, the Postgres schema and its stored procedures, 30
-                        serverless edge functions, the realtime live draft engine, the scoring pipeline, the
-                        App Store and Play compliance work, and the marketing site.
-                    </p>
-
-                    <div class="featured-stack">
-                        <span class="fx-tag">Flutter</span>
-                        <span class="fx-tag">Dart</span>
-                        <span class="fx-tag">Riverpod</span>
-                        <span class="fx-tag">Supabase</span>
-                        <span class="fx-tag">PostgreSQL</span>
-                        <span class="fx-tag">Deno</span>
-                        <span class="fx-tag">Python</span>
-                        <span class="fx-tag">Firebase</span>
-                        <span class="fx-tag">Cloudflare</span>
+            <article class="featured-card reveal">
+                <div class="featured-copy">
+                    <div class="featured-topline">
+                        <span>Co-founder & sole engineer</span>
+                        <span>Shipped product · 2026</span>
                     </div>
-
+                    <img class="featured-logo" src="screenshots/fantasyx/fantasyx-logo-transparent.svg" alt="FantasyX">
+                    <h2>Fantasy football, rebuilt around a weekly survival game.</h2>
+                    <p>
+                        FantasyX is a full-stack fantasy football platform where every league
+                        re-drafts each week. Once you start a player, they enter your graveyard
+                        and leave your draft pool for the season—making every pick matter.
+                    </p>
+                    <p>
+                        I designed and built the Flutter client, Postgres architecture, realtime
+                        draft engine, scoring pipeline, 30 edge functions, and release workflow.
+                    </p>
+                    <div class="tag-list" aria-label="FantasyX technologies">
+                        <span>Flutter</span><span>Dart</span><span>Supabase</span>
+                        <span>PostgreSQL</span><span>Deno</span><span>Firebase</span>
+                    </div>
                     <div class="featured-actions">
-                        <a href="fantasyx.html" class="fx-btn gold">About the app →</a>
-                        <a href="https://apps.apple.com/us/app/fantasyx/id6791657044" class="fx-btn" target="_blank" rel="noopener">
-                            <i class="fa-brands fa-app-store-ios"></i> App Store
+                        <a class="button button-dark" href="fantasyx.html">Read the case study <span aria-hidden="true">→</span></a>
+                        <a class="text-link" href="https://apps.apple.com/us/app/fantasyx/id6791657044" target="_blank" rel="noopener">
+                            App Store <span aria-hidden="true">↗</span>
                         </a>
-                        <a href="https://fantasyx.net" class="fx-btn" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-globe"></i> fantasyx.net
+                        <a class="text-link" href="https://fantasyx.net" target="_blank" rel="noopener">
+                            Live site <span aria-hidden="true">↗</span>
                         </a>
                     </div>
                 </div>
 
-                <div class="featured-shots">
-                    <img src="screenshots/fantasyx/fx-01-hero.webp" alt="FantasyX weekly roster screen" loading="lazy" />
-                    <img src="screenshots/fantasyx/fx-03-graveyard.webp" alt="FantasyX player graveyard screen" loading="lazy" />
+                <div class="featured-visual">
+                    <div class="phone phone-back">
+                        <img src="screenshots/fantasyx/fx-03-graveyard.webp" alt="FantasyX player graveyard screen" loading="lazy">
+                    </div>
+                    <div class="phone phone-front">
+                        <img src="screenshots/fantasyx/fx-01-hero.webp" alt="FantasyX weekly roster screen" loading="lazy">
+                    </div>
+                    <span class="visual-label label-one">51 screens</span>
+                    <span class="visual-label label-two">3 platforms</span>
+                </div>
+
+                <div class="featured-stats" aria-label="FantasyX project statistics">
+                    <div><strong>45K+</strong><span>lines of Dart</span></div>
+                    <div><strong>99</strong><span>Postgres RPCs</span></div>
+                    <div><strong>30</strong><span>edge functions</span></div>
+                </div>
+            </article>
+        </section>
+
+        <section class="projects section-shell" id="projects">
+            <div class="section-heading reveal">
+                <p class="kicker">02 / Selected work</p>
+                <h2>Projects by category</h2>
+            </div>
+
+            <nav class="category-nav reveal" aria-label="Project categories">
+                <a href="#games"><span>01</span> Games <strong>04</strong></a>
+                <a href="#websites"><span>02</span> Websites <strong>03</strong></a>
+                <a href="#mobile"><span>03</span> Mobile apps <strong>02</strong></a>
+                <a href="#other"><span>04</span> Other <strong>01</strong></a>
+            </nav>
+
+            <div class="project-category" id="games">
+                <div class="category-heading reveal">
+                    <p><span>01</span> Games</p>
+                    <p>Playable experiments, game jams, and complete releases.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card project-card-wide reveal">
+                        <a class="project-image" href="games/clam-it/" target="_blank" rel="noopener">
+                            <img src="screenshots/clam-it/clam_it_logo_1280x720.png" alt="Clam It game title art" loading="lazy">
+                            <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">01</div>
+                            <div>
+                                <h3>Clam It!</h3>
+                                <p>A solo-built pearl farming management game about balancing growth, risk, and crab defense.</p>
+                                <div class="mini-tags"><span>Godot</span><span>GDScript</span><span>Game design</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="games/clam-it/" target="_blank" rel="noopener">Play</a>
+                                <a href="games/clam-it/ClamIt_GDD.pdf">Design doc</a>
+                                <a href="https://github.com/daggerscythe/clam-it" target="_blank" rel="noopener">Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-image" href="games/chicken-warrior/" target="_blank" rel="noopener">
+                            <img src="screenshots/thumbnails/chicken.png" alt="Chicken Warrior game screenshot" loading="lazy">
+                            <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">02</div>
+                            <div>
+                                <h3>Chicken Warrior</h3>
+                                <p>A cross-platform 2D boss battler built in Flutter with Flame.</p>
+                                <div class="mini-tags"><span>Flutter</span><span>Flame</span><span>Animation</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="games/chicken-warrior/" target="_blank" rel="noopener">Play</a>
+                                <a href="gallery.html#chicken-warrior">Gallery</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-image" href="games/code-miss/" target="_blank" rel="noopener">
+                            <img src="screenshots/thumbnails/codemiss.png" alt="Code Miss game screenshot" loading="lazy">
+                            <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">03</div>
+                            <div>
+                                <h3>Code Miss</h3>
+                                <p>A voice-driven 3D browser game made with a four-person team in under 24 hours.</p>
+                                <div class="mini-tags"><span>A-Frame</span><span>JavaScript</span><span>Blender</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="games/code-miss/" target="_blank" rel="noopener">Play</a>
+                                <a href="https://github.com/daggerscythe/code-miss" target="_blank" rel="noopener">Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-image" href="gallery.html#slaying-goliath">
+                            <img src="screenshots/thumbnails/goliath.png" alt="Slaying Goliath character selection screen" loading="lazy">
+                            <span class="image-action">View gallery <span aria-hidden="true">→</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">04</div>
+                            <div>
+                                <h3>Slaying Goliath</h3>
+                                <p>A four-player asymmetric 3D combat game built during Hackathon 2026.</p>
+                                <div class="mini-tags"><span>A-Frame</span><span>Three.js</span><span>WebSockets</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="gallery.html#slaying-goliath">Gallery</a>
+                                <a href="https://github.com/daggerscythe/hackathon2026" target="_blank" rel="noopener">Code</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <div class="featured-mechanics">
-                <div class="fx-mechanic">
-                    <div class="fx-mechanic-head">
-                        <span class="fx-mechanic-icon">⚡</span>
-                        <span class="fx-mechanic-title">Weekly Re-Draft</span>
-                    </div>
-                    <p class="fx-mechanic-desc">A live, timed draft room every week with a 20 second pick clock, realtime board, and server-side autopick.</p>
+            <div class="project-category" id="websites">
+                <div class="category-heading reveal">
+                    <p><span>02</span> Websites</p>
+                    <p>Interfaces that make complex information easier to use.</p>
                 </div>
-                <div class="fx-mechanic">
-                    <div class="fx-mechanic-head">
-                        <span class="fx-mechanic-icon">💀</span>
-                        <span class="fx-mechanic-title">The Graveyard</span>
-                    </div>
-                    <p class="fx-mechanic-desc">Players you start and play are locked out for the season. A scarce revive economy is the only way back.</p>
-                </div>
-                <div class="fx-mechanic">
-                    <div class="fx-mechanic-head">
-                        <span class="fx-mechanic-icon">📡</span>
-                        <span class="fx-mechanic-title">Live Scoring</span>
-                    </div>
-                    <p class="fx-mechanic-desc">Polled NFL stats drive live matchup scores, win probability, and injury alerts on the dashboard.</p>
-                </div>
-                <div class="fx-mechanic">
-                    <div class="fx-mechanic-head">
-                        <span class="fx-mechanic-icon">🏆</span>
-                        <span class="fx-mechanic-title">Full Season Engine</span>
-                    </div>
-                    <p class="fx-mechanic-desc">Waivers, trades, playoffs with consolation brackets, league chat, moderation, and a trophy room.</p>
+                <div class="project-grid">
+                    <article class="project-card project-card-wide reveal">
+                        <a class="project-image" href="websites/muscle-map/" target="_blank" rel="noopener">
+                            <img src="screenshots/muscle-map/muscle-map-thumbnail.png" alt="Muscle Map interactive anatomy interface" loading="lazy">
+                            <span class="image-action">Open website <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">01</div>
+                            <div>
+                                <h3>Muscle Map</h3>
+                                <p>An accessible interactive anatomy map that connects individual muscles to exercises and equipment.</p>
+                                <div class="mini-tags"><span>JavaScript</span><span>SVG</span><span>jQuery</span><span>Accessibility</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="websites/muscle-map/" target="_blank" rel="noopener">Visit</a>
+                                <a href="https://github.com/gzhumash/gzhumash.github.io" target="_blank" rel="noopener">Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-image" href="gallery.html#cs2skins">
+                            <img src="screenshots/thumbnails/skins.png" alt="Counter-Strike 2 skins database interface" loading="lazy">
+                            <span class="image-action">View gallery <span aria-hidden="true">→</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">02</div>
+                            <div>
+                                <h3>CS2 Skins Database</h3>
+                                <p>A CRUD inventory interface with live market pricing and custom database queries.</p>
+                                <div class="mini-tags"><span>PHP</span><span>MariaDB</span><span>Steam API</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="gallery.html#cs2skins">Gallery</a>
+                                <a href="https://github.com/daggerscythe/cs2-skins-db" target="_blank" rel="noopener">Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-image project-image-static">
+                            <img src="screenshots/thumbnails/portfolio.png" alt="Previous version of this portfolio website" loading="lazy">
+                            <span class="image-action">You are here</span>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-index">03</div>
+                            <div>
+                                <h3>Portfolio</h3>
+                                <p>An evolving archive for my software, experiments, and game development work.</p>
+                                <div class="mini-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <div class="featured-stats">
-                <div class="fx-stat">
-                    <div class="fx-stat-num">45K+</div>
-                    <div class="fx-stat-label">Lines of Dart</div>
+            <div class="project-category" id="mobile">
+                <div class="category-heading reveal">
+                    <p><span>03</span> Mobile apps</p>
+                    <p>Cross-platform tools built around real user workflows.</p>
                 </div>
-                <div class="fx-stat">
-                    <div class="fx-stat-num">99</div>
-                    <div class="fx-stat-label">Postgres RPCs</div>
-                </div>
-                <div class="fx-stat">
-                    <div class="fx-stat-num">30</div>
-                    <div class="fx-stat-label">Edge Functions</div>
-                </div>
-                <div class="fx-stat">
-                    <div class="fx-stat-num">51</div>
-                    <div class="fx-stat-label">App Screens</div>
-                </div>
-                <div class="fx-stat">
-                    <div class="fx-stat-num">3</div>
-                    <div class="fx-stat-label">Platforms</div>
-                </div>
-            </div>
-        </div>
+                <div class="project-grid">
+                    <article class="project-card reveal">
+                        <a class="project-image" href="apps/the-daily-guilt-trip/" target="_blank" rel="noopener">
+                            <img src="screenshots/thumbnails/habit.gif" alt="The Daily Guilt Trip habit tracker dashboard" loading="lazy">
+                            <span class="image-action">Open app <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">01</div>
+                            <div>
+                                <h3>The Daily Guilt Trip</h3>
+                                <p>A gamified habit tracker with custom schedules, streaks, levels, and authentication.</p>
+                                <div class="mini-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="apps/the-daily-guilt-trip/" target="_blank" rel="noopener">Demo</a>
+                                <a href="gallery.html#habit">Gallery</a>
+                                <a href="apks/the-daily-guilt-trip.apk" download>APK</a>
+                            </div>
+                        </div>
+                    </article>
 
-        <div class="filter-bar reveal">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="mobile">Mobile</button>
-            <button class="filter-btn" data-filter="desktop">Desktop</button>
-            <button class="filter-btn" data-filter="game">Games</button>
-            <button class="filter-btn" data-filter="web">Web</button>
-        </div>
-
-        <div class="projects-grid">
-
-            <!-- MOBILE APPS -->
-            <div class="project-card reveal" data-category="mobile">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/habit.gif" alt="The Daily Guilt Trip" />
-                    <span class="card-category cat-mobile">Mobile</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">The Daily Guilt Trip</h3>
-                    <p class="card-desc">This is one of the projects for my Mobile App Development Class. 
-                        I developed an app that you can use to track your habits, viewing them in a daily or monthly fashion. 
-                        Each habit can have a custom frequency. Included features: daily completion streaks, habits leveling up, 
-                        user authentication. It was developed with Flutter and uses Google's 
-                        Firestore Database to store each user's data.</p>
-                    <div class="card-stack">
-                        <span class="stack-tag">flutter</span>
-                        <span class="stack-tag">dart</span>
-                        <span class="stack-tag">firebase</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="apps/the-daily-guilt-trip/" class="card-btn primary" target="_blank">Live Demo</a>
-                        <!-- <a href="https://github.com/daggerscythe/the-daily-guilt-trip" class="card-btn">GitHub</a> -->
-                        <a href="gallery.html#habit" class="card-btn">Screenshots</a>
-                        <a href="apks/the-daily-guilt-trip.apk" class="card-btn" download>Download APK</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card reveal" data-category="mobile">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/expense.png" alt="Bankruptcy Simulator" />
-                    <span class="card-category cat-mobile">Mobile</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Bankruptcy Simulator</h3>
-                    <p class="card-desc">This is one of the projects for my Mobile App Development Class. 
-                        I developed an app that you can use to track your income and expenses, 
-                        view them by day/week/month/year in a pie or bar chart view and add custom categories. 
-                        I also implemented a user authentication system. It was developed with Flutter and uses 
-                        Google's Firestore Database to store each user's data.</p>
-                    <div class="card-stack">
-                        <span class="stack-tag">flutter</span>
-                        <span class="stack-tag">dart</span>
-                        <span class="stack-tag">firebase</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="apps/bankruptcy-simulator/" class="card-btn primary" target="_blank">Live Demo</a>
-                        <!-- <a href="https://github.com/daggerscythe/bankruptcy-simulator" class="card-btn">GitHub</a> -->
-                        <a href="gallery.html#expense" class="card-btn">Screenshots</a>
-                        <a href="apks/bankruptcy-simulator.apk" class="card-btn">Download APK</a>
-                    </div>
+                    <article class="project-card reveal">
+                        <a class="project-image" href="apps/bankruptcy-simulator/" target="_blank" rel="noopener">
+                            <img src="screenshots/thumbnails/expense.png" alt="Bankruptcy Simulator expense charts" loading="lazy">
+                            <span class="image-action">Open app <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">02</div>
+                            <div>
+                                <h3>Bankruptcy Simulator</h3>
+                                <p>An income and expense tracker with flexible categories, time ranges, and data visualizations.</p>
+                                <div class="mini-tags"><span>Flutter</span><span>Dart</span><span>Firebase</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="apps/bankruptcy-simulator/" target="_blank" rel="noopener">Demo</a>
+                                <a href="gallery.html#expense">Gallery</a>
+                                <a href="apks/bankruptcy-simulator.apk" download>APK</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
 
-            <!-- GAMES -->
-            <div class="project-card reveal" data-category="game">
-                <div class="card-thumb">
-                    <img src="screenshots/clam-it/clam_it_logo_1280x720.png" alt="Clam It!" />
-                    <span class="card-category cat-game">Game</span>
+            <div class="project-category" id="other">
+                <div class="category-heading reveal">
+                    <p><span>04</span> Other projects</p>
+                    <p>Small, useful tools built to solve specific problems.</p>
                 </div>
-                <div class="card-body">
-                    <h3 class="card-title">Clam It! (2D)</h3>
-                    <p class="card-desc">This 2D management game was developed solo in 2 weeks
-                        as a project for CSCI 5499B - Game Development in Fall 2026. It was built
-                        in Godot 4.7 and programmed with GDScript. You play as a pearl farmer who
-                        plants, cleans, harvests, and sells pearls while defending them from crabs.
-                        Chum makes pearls grow faster but attracts crabs, so every click is a
-                        risk-vs-reward call, and a limited supply of sonic flares is the only way to
-                        scare them off. It has a guided tutorial stage that introduces one tool per level,
-                        a freeplay mode up to Level 30, 7 pearl types based on real-world pearls with
-                        weighted drop rates, an upgrade shop, and a save system. The game was balanced
-                        through several rounds of playtesting. All sprites (drawn in Piskel) and audio
-                        were made by me. Played with mouse and keyboard.
+                <div class="project-grid single-project">
+                    <article class="project-card project-card-wide reveal">
+                        <a class="project-image" href="gallery.html#steam-lib-sort-demo">
+                            <img src="screenshots/thumbnails/libsort.png" alt="Steam Library Sorter desktop interface" loading="lazy">
+                            <span class="image-action">Watch demo <span aria-hidden="true">→</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div class="project-index">01</div>
+                            <div>
+                                <h3>Steam Library Sorter</h3>
+                                <p>A desktop utility that fetches a Steam library and sorts games by release date.</p>
+                                <div class="mini-tags"><span>Python</span><span>PyQt5</span><span>Steam API</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="gallery.html#steam-lib-sort-demo">Demo</a>
+                                <a href="exes/steam-library-sorter.exe" download>Download</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section-shell" id="about">
+            <div class="about-intro reveal">
+                <p class="kicker">03 / About me</p>
+                <h2>I care about how things <em>feel</em>, not just whether they work.</h2>
+            </div>
+            <div class="about-body reveal">
+                <div class="about-copy">
+                    <p>
+                        I’m pursuing a B.S. in Computer Science with a minor in eSports
+                        Management at the University of Mississippi. I like working across
+                        the entire stack—from databases and realtime systems to interfaces,
+                        game mechanics, and tiny interaction details.
                     </p>
-                    <div class="card-stack">
-                        <span class="stack-tag">Godot</span>
-                        <span class="stack-tag">GDScript</span>
-                        <span class="stack-tag">Piskel</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="games/clam-it/" class="card-btn primary" target="_blank">Play Demo</a>
-                        <a href="games/clam-it/ClamIt_GDD.pdf" class="card-btn" download>Design Doc <i class="fa-solid fa-file-arrow-down"></i></a>
-                        <a href="exes/ClamIt_Windows.zip" class="card-btn" download>Download ZIP</a>
-                        <a href="https://github.com/daggerscythe/clam-it" class="card-btn" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card reveal" data-category="game">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/chicken.png" alt="Chicken Warrior" />
-                    <span class="card-category cat-game">Game</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Chicken Warrior</h3>
-                    <p class="card-desc">This 2D platformer was developed in 2 weeks as 
-                        a final project for CSCI 458 - Mobile App Development. 
-                        It was programmed using Flutter's Flame dependency. 
-                        You play as a chef who needs to battle 3 enemies in order to 
-                        cook a rotisserie chicken. The game is fully functional and 
-                        playable, you can choose what level to play, toggle audio. 
-                        Mobile controls are implemented as well.
+                    <p>
+                        Right now, I’m especially interested in game development, graphics
+                        programming, and building my own C++ game engine.
                     </p>
-                    <div class="card-stack">
-                        <span class="stack-tag">Flutter</span>
-                        <span class="stack-tag">Flame</span>
-                        <span class="stack-tag">Sprite Animation</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="games/chicken-warrior/" class="card-btn primary" target="_blank">Play Demo</a>
-                        <a href="gallery.html#chicken-warrior" class="card-btn">Screenshots</a>
-                        <a href="gallery.html#chicken-warrior-demo" class="card-btn">Video Demo</a>
-                        <a href="https://github.com/daggerscythe/chicken-game" class="card-btn" target="_blank">GitHub</a>
-                    </div>
                 </div>
-            </div>
-
-            <div class="project-card reveal" data-category="game">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/codemiss.png" alt="Code Miss" />
-                    <span class="card-category cat-game">Game</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Code Miss</h3>
-                    <p class="card-desc">This browser-based 3D game was developed in under 
-                        24 hours during the University of Mississippi's Hackathon 2025. 
-                        It was rendered using A-Frame and programmed with JavaScript, using 
-                        Git for version control. It also implements the DeepSeek LLM API for 
-                        the NPCs. I was part of a 4-memeber team, and I was responsible for 
-                        all of the 3D models as well as the main gameplay logic/scripting. 
-                        The player's goal is to convince students to join the Coding Club 
-                        within a limited time frame. Each NPC has a different personality, 
-                        and the player must use a microphone to talk to convince them to join. 
-                        The main location was modeled after the University's Computer Science 
-                        building, Weir Hall.
-                    </p>
-                    <div class="card-stack">
-                        <span class="stack-tag">A-Frame</span>
-                        <span class="stack-tag">JavaScript</span>
-                        <span class="stack-tag">Blender</span>
+                <div class="skills">
+                    <div>
+                        <h3>Languages</h3>
+                        <p>C / C++ / C#, Dart, JavaScript, Python, Java, SQL, GDScript</p>
                     </div>
-                    <div class="card-actions">
-                        <a href="games/code-miss/" class="card-btn primary" target="_blank">Play Demo</a>
-                        <a href="gallery.html#code-miss" class="card-btn">Screenshots</a>
-                        <a href="gallery.html#code-miss-demo" class="card-btn">Video Demo</a>
-                        <a href="https://github.com/daggerscythe/code-miss" class="card-btn" target="_blank">GitHub</a>
+                    <div>
+                        <h3>Tools & frameworks</h3>
+                        <p>Flutter, Godot, OpenGL, Supabase, Firebase, A-Frame, PyQt5</p>
+                    </div>
+                    <div>
+                        <h3>Currently exploring</h3>
+                        <p>Game engine architecture, realtime systems, graphics programming</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="project-card reveal" data-category="game">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/goliath.png" alt="Slaying Goliath" />
-                    <span class="card-category cat-game">Game</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Slaying Goliath</h3>
-                    <p class="card-desc">This browser-based 3D multiplayer game was developed in under 
-                        24 hours during the University of Mississippi's Hackathon 2026. 
-                        It was rendered using A-Frame and programmed with JavaScript, using 
-                        Git for version control. We used WebSockets to add a multiplayer feature, and 
-                        designed a class-based combat system across 7 classes with distinct stat multipliers
-                        parsed from a 780-character CSV dataset, cooldwn tracking, and role-specific abilities.
-                        I was part of a 4-memeber team, and I was responsible for the main gameplay loop, mechanics,
-                        & scripting, as well as generating 3D models using Three.js. Three players play as heroes
-                        working together to defeat a villain, who is controlled by a fourth player.
-                    </p>
-                    <div class="card-stack">
-                        <span class="stack-tag">A-Frame</span>
-                        <span class="stack-tag">JavaScript</span>
-                        <span class="stack-tag">Three.js</span>
-                        <span class="stack-tag">HTML</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="javascript:void(0)" class="card-btn primary" onclick=showToast()>Play Demo</a>
-                        <a href="gallery.html#slaying-goliath" class="card-btn">Screenshots</a>
-                        <a href="gallery.html#slaying-goliath-demo" class="card-btn">Video Demo</a>
-                        <a href="https://github.com/daggerscythe/hackathon2026" class="card-btn" target="_blank">GitHub</a>
-                    </div>
+        <section class="contact section-shell" id="contact">
+            <div class="contact-card reveal">
+                <p class="kicker">04 / Get in touch</p>
+                <h2>Have an interesting problem?</h2>
+                <p>I’m always happy to talk about software, games, internships, or a project worth building.</p>
+                <a class="contact-email" href="mailto:gulsanazhu@gmail.com">
+                    gulsanazhu@gmail.com <span aria-hidden="true">↗</span>
+                </a>
+                <div class="contact-links">
+                    <a href="https://github.com/daggerscythe" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/danizhu" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="Gulsana (Dani) Zhumasheva Resume.pdf" download>Résumé</a>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <!-- WEB APPS -->
-            <div class="project-card reveal" data-category="web">
-                <div class="card-thumb">
-                    <img src="screenshots/muscle-map/muscle-map-thumbnail.png" alt="Muscle Map" />
-                    <span class="card-category cat-web">Web</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Muscle Map</h3>
-                    <p class="card-desc">This is my semester-long project for CSCI 3054 - Web Development
-                        in Fall 2026, built solo over about 6 weeks with HTML, CSS, and JavaScript (jQuery).
-                        The site answers one question: what exercise targets what muscle? You pick a muscle
-                        group on an interactive SVG anatomy map, zoom in on a specific muscle, and get a list
-                        of exercises with the equipment needed, step-by-step instructions, and a GIF demo.
-                        It was built with a mobile-first, responsive design through iterative development,
-                        and accessibility was a top priority: ARIA labels, full keyboard navigation of the
-                        map, and focus management.
-                    </p>
-                    <p class="card-note">Still in development: some features, like log in and the contact form, have not been implemented yet.</p>
-                    <div class="card-stack">
-                        <span class="stack-tag">HTML</span>
-                        <span class="stack-tag">CSS</span>
-                        <span class="stack-tag">JS</span>
-                        <span class="stack-tag">SVG</span>
-                        <span class="stack-tag">jQuery</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="websites/muscle-map/" class="card-btn primary" target="_blank" rel="noopener">Live Demo</a>
-                        <a href="https://github.com/gzhumash/gzhumash.github.io" class="card-btn" target="_blank">GitHub</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card reveal" data-category="web">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/skins.png" alt="Counter-Strike 2 Skins DB" />
-                    <span class="card-category cat-web">Web</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Counter-Strike 2 Skins Database</h3>
-                    <p class="card-desc">This is my final project for a Database course. 
-                        I ran a Python script that used my Steam API key to fetch all of the items in my 
-                        Counter-Strike 2 inventory and stored them in a .json file. I then parsed the data 
-                        and converted it into an SQL insert script and populated the MariaDB tables.
-                        Using PHP, I made a web interface to display and edit the database of my skins. 
-                        It has basic CRUD functions, specific queries for the database that were 
-                        required in the final project criteria, and a live market price integration.
-                    </p>
-                    <div class="card-stack">
-                        <span class="stack-tag">PHP</span>
-                        <span class="stack-tag">MariaDB</span>
-                        <span class="stack-tag">mySQL</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="javascript:void(0)" class="card-btn primary" onclick=showToast()>Live Demo</a>
-                        <a href="https://github.com/daggerscythe/cs2-skins-db" class="card-btn" target="_blank">GitHub</a>
-                        <a href="gallery.html#cs2skins" class="card-btn">Screenshots</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-card reveal" data-category="web">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/portfolio.png" alt="My Portfolio Website" />
-                    <span class="card-category cat-web">Web</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">My Portfolio Website</h3>
-                    <p class="card-desc">Portfolio website to showcase my projects, you're using it right now <i class="far fa-smile"></i></p>
-                    <div class="card-stack">
-                        <span class="stack-tag">HTML</span>
-                        <span class="stack-tag">CSS</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DESKTOP APPS -->
-            <div class="project-card reveal" data-category="desktop">
-                <div class="card-thumb">
-                    <img src="screenshots/thumbnails/libsort.png" alt="Steam Library Sorter" />
-                    <span class="card-category cat-desktop">Desktop</span>
-                </div>
-                <div class="card-body">
-                    <h3 class="card-title">Steam Library Sorter</h3>
-                    <p class="card-desc">I made this as a little side project to learn Python
-                        over the summer of 2025. I've always wanted to be able to sort 
-                        my Steam library by release date, but as far as I'm aware that 
-                        is not an option, so I just wrote made a program to do it myself. 
-                        The app runs a Python script that fetches the user's Steam library 
-                        using their API key and User ID. After fetching, it saves all the 
-                        data for faster access and allows the user to sort their library 
-                        by newest or oldest games.
-                    </p>
-                    <div class="card-stack">
-                        <span class="stack-tag">Python</span>
-                        <span class="stack-tag">PyQT5</span>
-                    </div>
-                    <div class="card-actions">
-                        <a href="gallery.html#steam-lib-sort-demo" class="card-btn primary">Video Demo</a>
-                        <a href="javascript:void(0)" class="card-btn" onclick=showToast()>GitHub</a>
-                        <a href="exes/steam-library-sorter.exe" class="card-btn" download>Download EXE</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="reveal">
-            <p class="section-label">Contact</p>
-            <h2 class="contact-headline">Let's<br/><span class="outline">work</span><br />together.</h2>
-        </div>
-        <div class="contact-links reveal">
-            <a href="mailto:gulsanazhu@gmail.com" class="contact-link">
-                <span class="contact-link-icon">✉</span>
-                <div>
-                    <span class="contact-link-label">Email</span>
-                    <span class="contact-link-value">gulsanazhu@gmail.com</span>
-                </div>
-            </a>
-            <a href="https://github.com/daggerscythe" target="_blank" class="contact-link">
-                <span class="contact-link-icon"><i class="fa-brands fa-github"></i></span>
-                <div>
-                    <span class="contact-link-label">GitHub</span>
-                    <span class="contact-link-value">github.com/daggerscythe</span>
-                </div>
-            </a>
-            <a href="https://linkedin.com/in/danizhu" target="_blank" class="contact-link">
-                <span class="contact-link-icon"><i class="fa-brands fa-linkedin"></i></span>
-                <div>
-                    <span class="contact-link-label">LinkedIn</span>
-                    <span class="contact-link-value">linkedin.com/in/danizhu</span>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <!-- Toast popup -->
-    <div id="toast" style="
-    position:fixed; bottom:32px; left:50%; transform:translateX(-50%) translateY(20px);
-    background:#111; border:1px solid #333; color:#f0f0f0;
-    font-family:'DM Mono',monospace; font-size:0.78rem; letter-spacing:0.05em;
-    padding:14px 24px; border-radius:4px; opacity:0;
-    transition:opacity 0.3s, transform 0.3s; pointer-events:none; z-index:999;
-    ">Coming soon, check back later ✦</div>
-
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 <span class="footer-accent">Dani Zhumasheva</span>. Built with HTML & CSS.</p>
-        <p>Hosted on <span class="footer-accent">GitHub Pages</span>.</p>
+        <p>© 2026 Dani Zhumasheva</p>
+        <p>Designed and built with care.</p>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
     </footer>
 
     <script>
-        // FILTER LOGIC
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const cards = document.querySelectorAll('.project-card');
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reveals = document.querySelectorAll('.reveal');
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                const filter = btn.dataset.filter;
-                cards.forEach(card => {
-                    if (filter === 'all' || card.dataset.category === filter) {
-                        card.classList.remove('hidden');
-                    } else {
-                        card.classList.add('hidden');
+        if (reducedMotion || !('IntersectionObserver' in window)) {
+            reveals.forEach((element) => element.classList.add('visible'));
+        } else {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
                     }
                 });
-            });
-        });
+            }, { threshold: 0.08 });
 
-        // SCROLL REVEAL
-        const reveals = document.querySelectorAll('.reveal');
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1});
-
-        reveals.forEach(element => observer.observe(element));
-
-        function showToast() {
-            const t = document.getElementById('toast');
-            t.style.opacity = '1';
-            t.style.transform = 'translateX(-50%) translateY(0)';
-            setTimeout(() => {
-                t.style.opacity = '0';
-                t.style.transform = 'translateX(-50%) translateY(20px)';
-            }, 2500);
+            reveals.forEach((element) => observer.observe(element));
         }
     </script>
 </body>
