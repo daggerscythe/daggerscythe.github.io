@@ -8,7 +8,7 @@
     <link rel="icon" href="logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Azeret+Mono:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="home.css">
 </head>
@@ -34,7 +34,6 @@
             <div class="hero-shape hero-shape-yellow" aria-hidden="true"></div>
 
             <div class="hero-content">
-                <p class="eyebrow"><span class="status-dot"></span> Computer science student · Available for opportunities</p>
                 <h1>Hi, I’m <span>Dani.</span></h1>
                 <p class="hero-intro">
                     I build useful software<br>
@@ -46,8 +45,11 @@
                 </p>
                 <div class="hero-actions">
                     <a class="button button-dark" href="#featured">See my work <span aria-hidden="true">↓</span></a>
-                    <a class="button button-light" href="Gulsana (Dani) Zhumasheva Resume.pdf" download>
-                        Résumé <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                    <a class="button button-light" href="resumes/Resume_GameDev.pdf" target="_blank" rel="noopener">
+                        Game dev résumé <i class="fa-solid fa-gamepad" aria-hidden="true"></i>
+                    </a>
+                    <a class="button button-light" href="resumes/Resume_SoftwareDev.pdf" target="_blank" rel="noopener">
+                        Software résumé <i class="fa-solid fa-code" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -63,16 +65,12 @@
 
         <section class="featured section-shell" id="featured">
             <div class="section-heading reveal">
-                <p class="kicker">01 / Featured project</p>
+                <h2>Featured project</h2>
                 <p class="section-note">The one I’m most proud of</p>
             </div>
 
             <article class="featured-card reveal">
                 <div class="featured-copy">
-                    <div class="featured-topline">
-                        <span>Co-founder & sole engineer</span>
-                        <span>Shipped product · 2026</span>
-                    </div>
                     <img class="featured-logo" src="screenshots/fantasyx/fantasyx-logo-transparent.svg" alt="FantasyX">
                     <h2>Fantasy football, rebuilt around a weekly survival game.</h2>
                     <p>
@@ -106,8 +104,6 @@
                     <div class="phone phone-front">
                         <img src="screenshots/fantasyx/fx-01-hero.webp" alt="FantasyX weekly roster screen" loading="lazy">
                     </div>
-                    <span class="visual-label label-one">51 screens</span>
-                    <span class="visual-label label-two">3 platforms</span>
                 </div>
 
                 <div class="featured-stats" aria-label="FantasyX project statistics">
@@ -120,20 +116,19 @@
 
         <section class="projects section-shell" id="projects">
             <div class="section-heading reveal">
-                <p class="kicker">02 / Selected work</p>
                 <h2>Projects by category</h2>
             </div>
 
             <nav class="category-nav reveal" aria-label="Project categories">
-                <a href="#games"><span>01</span> Games <strong>04</strong></a>
-                <a href="#websites"><span>02</span> Websites <strong>03</strong></a>
-                <a href="#mobile"><span>03</span> Mobile apps <strong>02</strong></a>
-                <a href="#other"><span>04</span> Other <strong>01</strong></a>
+                <a href="#games">Games</a>
+                <a href="#websites">Websites</a>
+                <a href="#mobile">Mobile apps</a>
+                <a href="#other">Other</a>
             </nav>
 
             <div class="project-category" id="games">
                 <div class="category-heading reveal">
-                    <p><span>01</span> Games</p>
+                    <p>Games</p>
                     <p>Playable experiments, game jams, and complete releases.</p>
                 </div>
                 <div class="project-grid">
@@ -143,7 +138,6 @@
                             <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">01</div>
                             <div>
                                 <h3>Clam It!</h3>
                                 <p>A solo-built pearl farming management game about balancing growth, risk, and crab defense.</p>
@@ -163,7 +157,6 @@
                             <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">02</div>
                             <div>
                                 <h3>Chicken Warrior</h3>
                                 <p>A cross-platform 2D boss battler built in Flutter with Flame.</p>
@@ -182,7 +175,6 @@
                             <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">03</div>
                             <div>
                                 <h3>Code Miss</h3>
                                 <p>A voice-driven 3D browser game made with a four-person team in under 24 hours.</p>
@@ -201,7 +193,6 @@
                             <span class="image-action">View gallery <span aria-hidden="true">→</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">04</div>
                             <div>
                                 <h3>Slaying Goliath</h3>
                                 <p>A four-player asymmetric 3D combat game built during Hackathon 2026.</p>
@@ -218,7 +209,7 @@
 
             <div class="project-category" id="websites">
                 <div class="category-heading reveal">
-                    <p><span>02</span> Websites</p>
+                    <p>Websites</p>
                     <p>Interfaces that make complex information easier to use.</p>
                 </div>
                 <div class="project-grid">
@@ -228,7 +219,6 @@
                             <span class="image-action">Open website <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">01</div>
                             <div>
                                 <h3>Muscle Map</h3>
                                 <p>An accessible interactive anatomy map that connects individual muscles to exercises and equipment.</p>
@@ -247,7 +237,6 @@
                             <span class="image-action">View gallery <span aria-hidden="true">→</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">02</div>
                             <div>
                                 <h3>CS2 Skins Database</h3>
                                 <p>A CRUD inventory interface with live market pricing and custom database queries.</p>
@@ -266,7 +255,6 @@
                             <span class="image-action">You are here</span>
                         </div>
                         <div class="project-info">
-                            <div class="project-index">03</div>
                             <div>
                                 <h3>Portfolio</h3>
                                 <p>An evolving archive for my software, experiments, and game development work.</p>
@@ -279,7 +267,7 @@
 
             <div class="project-category" id="mobile">
                 <div class="category-heading reveal">
-                    <p><span>03</span> Mobile apps</p>
+                    <p>Mobile apps</p>
                     <p>Cross-platform tools built around real user workflows.</p>
                 </div>
                 <div class="project-grid">
@@ -289,7 +277,6 @@
                             <span class="image-action">Open app <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">01</div>
                             <div>
                                 <h3>The Daily Guilt Trip</h3>
                                 <p>A gamified habit tracker with custom schedules, streaks, levels, and authentication.</p>
@@ -309,7 +296,6 @@
                             <span class="image-action">Open app <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">02</div>
                             <div>
                                 <h3>Bankruptcy Simulator</h3>
                                 <p>An income and expense tracker with flexible categories, time ranges, and data visualizations.</p>
@@ -322,12 +308,29 @@
                             </div>
                         </div>
                     </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-image project-image-placeholder" href="fitforge.html">
+                            <span class="placeholder-title">FitForge</span>
+                            <span class="image-action">Learn more <span aria-hidden="true">→</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div>
+                                <h3>FitForge</h3>
+                                <p>An AI personal trainer app designed for my class.</p>
+                                <div class="mini-tags"><span>Mobile</span><span>AI</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="fitforge.html">Details</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
 
             <div class="project-category" id="other">
                 <div class="category-heading reveal">
-                    <p><span>04</span> Other projects</p>
+                    <p>Other projects</p>
                     <p>Small, useful tools built to solve specific problems.</p>
                 </div>
                 <div class="project-grid single-project">
@@ -337,7 +340,6 @@
                             <span class="image-action">Watch demo <span aria-hidden="true">→</span></span>
                         </a>
                         <div class="project-info">
-                            <div class="project-index">01</div>
                             <div>
                                 <h3>Steam Library Sorter</h3>
                                 <p>A desktop utility that fetches a Steam library and sorts games by release date.</p>
@@ -355,7 +357,6 @@
 
         <section class="about section-shell" id="about">
             <div class="about-intro reveal">
-                <p class="kicker">03 / About me</p>
                 <h2>I care about how things <em>feel</em>, not just whether they work.</h2>
             </div>
             <div class="about-body reveal">
@@ -390,7 +391,6 @@
 
         <section class="contact section-shell" id="contact">
             <div class="contact-card reveal">
-                <p class="kicker">04 / Get in touch</p>
                 <h2>Have an interesting problem?</h2>
                 <p>I’m always happy to talk about software, games, internships, or a project worth building.</p>
                 <a class="contact-email" href="mailto:gulsanazhu@gmail.com">
@@ -399,7 +399,8 @@
                 <div class="contact-links">
                     <a href="https://github.com/daggerscythe" target="_blank" rel="noopener">GitHub</a>
                     <a href="https://linkedin.com/in/danizhu" target="_blank" rel="noopener">LinkedIn</a>
-                    <a href="Gulsana (Dani) Zhumasheva Resume.pdf" download>Résumé</a>
+                    <a href="resumes/Resume_GameDev.pdf" target="_blank" rel="noopener">Game dev résumé</a>
+                    <a href="resumes/Resume_SoftwareDev.pdf" target="_blank" rel="noopener">Software résumé</a>
                 </div>
             </div>
         </section>
