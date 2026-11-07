@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-# This repository contains prebuilt static assets and has no dependencies.
-exit 0
