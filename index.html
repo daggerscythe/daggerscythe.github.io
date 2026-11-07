@@ -104,15 +104,15 @@
             </div>
 
             <nav class="category-nav reveal" aria-label="Project categories">
-                <a href="#games">Games</a>
-                <a href="#websites">Websites</a>
-                <a href="#mobile">Mobile apps</a>
-                <a href="#other">Other</a>
+                <a href="#games"><span class="cat-emoji" aria-hidden="true">🎮</span> Games</a>
+                <a href="#websites"><span class="cat-emoji" aria-hidden="true">🌐</span> Websites</a>
+                <a href="#mobile"><span class="cat-emoji" aria-hidden="true">📱</span> Mobile apps</a>
+                <a href="#other"><span class="cat-emoji" aria-hidden="true">💻</span> Other</a>
             </nav>
 
             <div class="project-category" id="games">
                 <div class="category-heading reveal">
-                    <p>Games</p>
+                    <p><span class="cat-emoji" aria-hidden="true">🎮</span> Games</p>
                     <p>Playable experiments, game jams, and complete releases.</p>
                 </div>
                 <div class="project-grid">
@@ -124,16 +124,57 @@
                         <div class="project-info">
                             <div>
                                 <h3>Clam It!</h3>
-                                <p>A solo-built pearl farming management game about balancing growth, risk, and crab defense.</p>
+                                <p>A solo-built pearl farming management game about balancing growth, risk, and crab defense. Made in 2 weeks for my game dev class (theme: underwater).</p>
                                 <div class="mini-tags"><span>Godot</span><span>GDScript</span><span>Game design</span></div>
                             </div>
                             <div class="project-links">
                                 <a href="games/clam-it/" target="_blank" rel="noopener">Play</a>
+                                <a href="#" data-todo="Clam It video URL" target="_blank" rel="noopener">Video</a>
                                 <a href="games/clam-it/ClamIt_GDD.pdf">Design doc</a>
                                 <a href="https://github.com/daggerscythe/clam-it" target="_blank" rel="noopener">Code</a>
                             </div>
                         </div>
                     </article>
+                    <article class="project-card reveal">
+                        <a class="project-image project-image-placeholder" href="games/twick-o-tweat/" target="_blank" rel="noopener">
+                            <span class="placeholder-title">[Twick o Tweat image]</span>
+                            <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div>
+                                <h3>Twick o Tweat</h3>
+                                <p>[Short description]. A 3D Unity game made in 2 weeks for my game dev class (theme: Halloween).</p>
+                                <div class="mini-tags"><span>Unity</span><span>C#</span><span>3D</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="games/twick-o-tweat/" target="_blank" rel="noopener">Play</a>
+                                <a href="#" data-todo="Twick o Tweat video URL" target="_blank" rel="noopener">Video</a>
+                                <a href="games/twick-o-tweat/Twick_o_Tweat_High_Concept.pdf" target="_blank" rel="noopener">High concept</a>
+                                <a href="games/twick-o-tweat/Twick_o_Tweat_Game_Script.pdf" target="_blank" rel="noopener">Game script</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <a class="project-image project-image-placeholder" href="#" data-todo="Kitchen Rush video URL" target="_blank" rel="noopener">
+                            <span class="placeholder-title">[Kitchen Rush image]</span>
+                            <span class="image-action">Watch video <span aria-hidden="true">↗</span></span>
+                        </a>
+                        <div class="project-info">
+                            <div>
+                                <h3>Kitchen Rush: Grandma’s Watch</h3>
+                                <p>[Short description]. A 3D Unreal Engine game made in 2 weeks for my game dev class (theme: time).</p>
+                                <div class="mini-tags"><span>Unreal Engine</span><span>[Blueprints / C++]</span><span>3D</span></div>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" data-todo="Kitchen Rush video URL" target="_blank" rel="noopener">Video</a>
+                                <a href="games/kitchen-rush/Kitchen_Rush_High_Concept.pdf" target="_blank" rel="noopener">High concept</a>
+                                <a href="games/kitchen-rush/Kitchen_Rush_Game_Script.pdf" target="_blank" rel="noopener">Game script</a>
+                                <a href="#" data-todo="Kitchen Rush download (itch.io or GitHub Release)" target="_blank" rel="noopener">Download</a>
+                            </div>
+                        </div>
+                    </article>
+
 
                     <article class="project-card reveal">
                         <a class="project-image" href="games/chicken-warrior/" target="_blank" rel="noopener">
@@ -193,7 +234,7 @@
 
             <div class="project-category" id="websites">
                 <div class="category-heading reveal">
-                    <p>Websites</p>
+                    <p><span class="cat-emoji" aria-hidden="true">🌐</span> Websites</p>
                     <p>Interfaces that make complex information easier to use.</p>
                 </div>
                 <div class="project-grid">
@@ -205,8 +246,9 @@
                         <div class="project-info">
                             <div>
                                 <h3>Muscle Map</h3>
-                                <p>An accessible interactive anatomy map that connects individual muscles to exercises and equipment.</p>
-                                <div class="mini-tags"><span>JavaScript</span><span>SVG</span><span>jQuery</span><span>Accessibility</span></div>
+                                <p>An accessible interactive anatomy map that connects individual muscles to exercises and equipment. Rebuilt from a static HTML/CSS + jQuery site into a React single-page app with Motion animations, plus Firebase Auth and Firestore for an auth gate and for fetching and storing data.</p>
+                                <p class="login-note"><strong>Demo login:</strong> test@email.com / 123456789</p>
+                                <div class="mini-tags"><span>React</span><span>Vite</span><span>Motion</span><span>Firebase Auth</span><span>Firestore</span><span>SVG</span><span>Accessibility</span></div>
                             </div>
                             <div class="project-links">
                                 <a href="websites/muscle-map/" target="_blank" rel="noopener">Visit</a>
@@ -251,7 +293,7 @@
 
             <div class="project-category" id="mobile">
                 <div class="category-heading reveal">
-                    <p>Mobile apps</p>
+                    <p><span class="cat-emoji" aria-hidden="true">📱</span> Mobile apps</p>
                     <p>Cross-platform tools built around real user workflows.</p>
                 </div>
                 <div class="project-grid">
@@ -314,7 +356,7 @@
 
             <div class="project-category" id="other">
                 <div class="category-heading reveal">
-                    <p>Other projects</p>
+                    <p><span class="cat-emoji" aria-hidden="true">💻</span> Other projects</p>
                     <p>Anything else that doesn’t fit the main categories.</p>
                 </div>
                 <div class="project-grid single-project">

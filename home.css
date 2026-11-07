@@ -341,6 +341,7 @@ button, a {
 }
 
 .featured {
+    padding-top: clamp(28px, 4vw, 56px);
     border-bottom: 1px solid var(--ink);
 }
 
@@ -1122,4 +1123,43 @@ footer a {
 .placeholder-title {
     font: 400 clamp(2rem, 4vw, 3rem) var(--serif);
     color: var(--ink);
+}
+
+.cat-emoji {
+    display: inline-block;
+    margin-right: 0.25em;
+    font-style: normal;
+    transition: transform 180ms ease;
+}
+
+.category-nav a:hover .cat-emoji {
+    transform: rotate(-10deg) scale(1.15);
+}
+
+.project-info p.login-note {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--ink);
+    border-radius: 10px;
+    background: var(--yellow);
+    color: var(--ink);
+    font-size: 0.95rem;
+}
+
+.category-nav .cat-emoji {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1;
+}
+
+.category-heading p:first-child .cat-emoji {
+    margin-right: 0;
+    color: inherit;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.project-image-placeholder {
+    text-decoration: none;
 }
