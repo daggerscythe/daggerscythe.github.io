@@ -1749,3 +1749,13 @@ footer a {
     .carousel { overflow-x: auto; }
     .slides-track { transition: none; }
 }
+
+/* Transparent logos: show the whole logo on a soft tint instead of cropping */
+.project-image-logo {
+    background: rgba(245, 215, 83, 0.22);
+}
+
+.project-image-logo img {
+    object-fit: contain;
+    padding: 6% 8%;
+}
