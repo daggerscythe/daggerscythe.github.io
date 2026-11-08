@@ -1,453 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dani's Project Gallery</title>
-  <link rel="icon" href="logo.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="style.css" /> 
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Screenshots and video demos of Dani Zhumasheva's apps and games.">
+    <title>Gallery | Dani Zhumasheva</title>
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- NAV -->
-  <nav>
-    <a class="nav-logo" href="index.html">DZ.</a>
-    <ul class="nav-links">
-      <li><a href="index.html#about">about</a></li>
-      <li><a href="index.html#projects">projects</a></li>
-      <li><a href="fantasyx.html">fantasyx</a></li>
-      <li><a href="gallery.html">gallery</a></li>
-      <li><a href="index.html#contact">contact</a></li>
-    </ul>
-  </nav>
+    <header class="site-header">
+        <a class="wordmark" href="index.html" aria-label="Dani Zhumasheva, home">
+            <span>D</span><span>Z</span>
+        </a>
+        <nav aria-label="Primary navigation">
+            <a href="index.html#featured">Featured</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#about">About</a>
+        </nav>
+        <a class="header-contact" href="mailto:gulsanazhu@gmail.com">Contact me <span aria-hidden="true">↗</span></a>
+    </header>
 
-  <div class="page-wrapper">
+    <main id="main">
+        <section class="hero page-hero">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-shape hero-shape-pink" aria-hidden="true"></div>
+            <div class="hero-shape hero-shape-yellow" aria-hidden="true"></div>
 
-    <div class="page-header">
-      <p class="section-label">// screenshots</p>
-      <h1 class="section-title">Gallery</h1>
-      <p class="page-desc">A visual showcase of my apps and game demos.</p>
-    </div>
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - The Daily Guilt Trip
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" id="habit">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">The Daily Guilt Trip</h2>
-        <span class="gallery-block-meta">mobile · flutter</span>
-      </div>
-
-      <div class="slideshow phone" id="slideshow-habit">
-        <div class="slides-track">
-
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/completion.gif" alt="Habit Completion" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/dashboard.png" alt="Dashboard" />
-          </div>
-          
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/habits.png" alt="Habits" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/addhabit.png" alt="Sidemenu" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/edithabit.png" alt="Edit Habit" />
-          </div>
-          
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/leaderboard.png" alt="Leaderboard" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/login.png" alt="Login Page" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/the-daily-guilt-trip/monthlyview.png" alt="Monthly View" />
-          </div>
-
-        </div>
-
-        <!-- Arrows -->
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 8</div>
-      </div>
-
-      <div class="slide-dots" id="dots-habit"></div>
-    </div>
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - Bankruptcy Simulator
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" id="expense">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Bankruptcy Simulator</h2>
-        <span class="gallery-block-meta">mobile · flutter</span>
-      </div>
-
-      <div class="slideshow phone" id="slideshow-expense">
-        <div class="slides-track">
-
-          <div class="slide">
-            <img src="screenshots/bankruptcy-simulator/piechart.png" alt="Piechart" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/bankruptcy-simulator/categories.png" alt="Cateories" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/bankruptcy-simulator/logbook.png" alt="Logbook" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/bankruptcy-simulator/login.png" alt="Login Page" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/bankruptcy-simulator/barchart.png" alt="Barchart" />
-          </div>
-        </div>
-
-        <!-- Arrows -->
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 5</div>
-      </div>
-
-      <div class="slide-dots" id="dots-expense"></div>
-    </div>
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - Chicken Warrior
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" style="animation-delay: 0.4s;" id="chicken-warrior">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Chicken Warrior</h2>
-        <span class="gallery-block-meta">game · flutter · flame</span>
-      </div>
-
-      <div class="slideshow landscape" id="slideshow-chicken-warrior">
-        <div class="slides-track">
-
-          <div class="slide">
-            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-01.png</span>
+            <div class="hero-content">
+                <h1>Gallery</h1>
+                <p class="hero-copy">Screenshots and video demos of my apps and games.</p>
             </div>
-          </div>
+        </section>
 
-          <div class="slide">
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-02.png</span>
+        <nav class="jump-bar" aria-label="Gallery sections">
+            <a href="#habit">📱 The Daily Guilt Trip</a>
+            <a href="#expense">📱 Bankruptcy Simulator</a>
+            <a href="#chicken-warrior">🎮 Chicken Warrior</a>
+            <a href="#slaying-goliath">🎮 Slaying Goliath</a>
+            <a href="#code-miss">🎮 Code Miss</a>
+            <a href="#steam-lib-sort-demo">💻 Steam Library Sorter</a>
+            <a href="#cs2skins">🌐 CS2 Skins Database</a>
+        </nav>
+
+        <!-- The Daily Guilt Trip -->
+        <section class="gallery-block" id="habit">
+            <div class="gallery-block-header">
+                <h2>The Daily Guilt Trip</h2>
+                <div class="mini-tags"><span>Mobile</span><span>Flutter</span></div>
             </div>
-          </div>
-
-        </div>
-
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 2</div>
-      </div>
-
-      <div class="slide-dots" id="dots-chicken-warrior"></div>
-    </div>
-
-    <div class="gallery-video" id="chicken-warrior-demo">
-      <iframe
-        src="https://www.youtube.com/embed/MN5oBF44VZE?si=v6Ao5hne6CpZF_RR"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - Slaying Goliath
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" style="animation-delay: 0.4s;" id="slaying-goliath">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Slaying Goliath</h2>
-        <span class="gallery-block-meta">game · JavaScript · A-Frame · Three.js</span>
-      </div>
-
-      <div class="slideshow landscape" id="slideshow-slaying-goliath">
-        <div class="slides-track">
-
-          <div class="slide">
-            <img src="screenshots/slaying-goliath/main_menu.png" alt="Main Menu" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/slaying-goliath/mode_select.png" alt="Mode Select" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/slaying-goliath/character_select.png" alt="Character Select" />
-          </div>
-
-          <div class="slide">
-            <img src="screenshots/thumbnails/image_placeholder.png" alt="More Coming Soon" />
-          </div>
-
-        </div>
-
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 4</div>
-      </div>
-
-      <div class="slide-dots" id="dots-slaying-goliath"></div>
-    </div>
-
-    <div class="gallery-video" id="slaying-goliath-demo">
-      <iframe
-        src="https://www.youtube.com/embed/ao-BIFp6huA?si=zGbLQiF_Yej6yjhA"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - Code Miss
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" style="animation-delay: 0.4s;" id="code-miss">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Code Miss</h2>
-        <span class="gallery-block-meta">game · JavaScript · A-Frame</span>
-      </div>
-
-      <div class="slideshow landscape" id="slideshow-code-miss">
-        <div class="slides-track">
-
-          <div class="slide">
-            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-01.png</span>
+            <div class="slideshow phone" tabindex="0" aria-roledescription="carousel" aria-label="The Daily Guilt Trip screenshots">
+                <div class="slides-track">
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/completion.gif" alt="Completing a habit" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/dashboard.png" alt="Dashboard" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/habits.png" alt="Habits list" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/addhabit.png" alt="Add habit screen" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/edithabit.png" alt="Edit habit screen" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/leaderboard.png" alt="Leaderboard" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/login.png" alt="Login screen" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/the-daily-guilt-trip/monthlyview.png" alt="Monthly view" loading="lazy"></div>
+                </div>
+                <button class="slide-arrow prev" aria-label="Previous screenshot">‹</button>
+                <button class="slide-arrow next" aria-label="Next screenshot">›</button>
+                <div class="slide-counter"></div>
             </div>
-          </div>
+            <div class="slide-dots"></div>
+        </section>
 
-          <div class="slide">
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-02.png</span>
+        <!-- Bankruptcy Simulator -->
+        <section class="gallery-block" id="expense">
+            <div class="gallery-block-header">
+                <h2>Bankruptcy Simulator</h2>
+                <div class="mini-tags"><span>Mobile</span><span>Flutter</span></div>
             </div>
-          </div>
-
-        </div>
-
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 2</div>
-      </div>
-
-      <div class="slide-dots" id="dots-code-miss"></div>
-    </div>
-
-    <div class="gallery-video" id="code-miss-demo">
-      <iframe 
-        src="https://www.youtube.com/embed/tD1JW6Uu8x8?si=SS7T2uoMmEEMS6u-"
-        allowfullscreen>
-      </iframe>
-    </div>
-
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - Steam Library Sorter
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" style="animation-delay: 0.4s;" id="steam-lib-sort">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Steam Library Sorter</h2>
-        <span class="gallery-block-meta">desktop · Python · PyQt5</span>
-      </div>
-
-      <div class="slideshow landscape" id="slideshow-steam-lib-sort">
-        <div class="slides-track">
-
-          <div class="slide">
-            <!-- Replace with: <img src="screenshots/game-1.png" alt="Main menu" /> -->
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-01.png</span>
+            <div class="slideshow phone" tabindex="0" aria-roledescription="carousel" aria-label="Bankruptcy Simulator screenshots">
+                <div class="slides-track">
+                    <div class="slide"><img src="screenshots/bankruptcy-simulator/piechart.png" alt="Pie chart of expenses" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/bankruptcy-simulator/categories.png" alt="Categories" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/bankruptcy-simulator/logbook.png" alt="Logbook" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/bankruptcy-simulator/login.png" alt="Login screen" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/bankruptcy-simulator/barchart.png" alt="Bar chart of expenses" loading="lazy"></div>
+                </div>
+                <button class="slide-arrow prev" aria-label="Previous screenshot">‹</button>
+                <button class="slide-arrow next" aria-label="Next screenshot">›</button>
+                <div class="slide-counter"></div>
             </div>
-          </div>
+            <div class="slide-dots"></div>
+        </section>
 
-          <div class="slide">
-            <div class="slide-placeholder">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
-              <span>screenshot-02.png</span>
+        <!-- Chicken Warrior -->
+        <section class="gallery-block" id="chicken-warrior">
+            <div class="gallery-block-header">
+                <h2>Chicken Warrior</h2>
+                <div class="mini-tags"><span>Game</span><span>Flutter</span><span>Flame</span></div>
             </div>
-          </div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/MN5oBF44VZE" title="Chicken Warrior demo" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </section>
 
-        </div>
+        <!-- Slaying Goliath -->
+        <section class="gallery-block" id="slaying-goliath">
+            <div class="gallery-block-header">
+                <h2>Slaying Goliath</h2>
+                <div class="mini-tags"><span>Game</span><span>JavaScript</span><span>A-Frame</span><span>Three.js</span></div>
+            </div>
+            <div class="slideshow landscape" tabindex="0" aria-roledescription="carousel" aria-label="Slaying Goliath screenshots">
+                <div class="slides-track">
+                    <div class="slide"><img src="screenshots/slaying-goliath/main_menu.png" alt="Main menu" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/slaying-goliath/mode_select.png" alt="Mode select" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/slaying-goliath/character_select.png" alt="Character select" loading="lazy"></div>
+                </div>
+                <button class="slide-arrow prev" aria-label="Previous screenshot">‹</button>
+                <button class="slide-arrow next" aria-label="Next screenshot">›</button>
+                <div class="slide-counter"></div>
+            </div>
+            <div class="slide-dots"></div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/ao-BIFp6huA" title="Slaying Goliath demo" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </section>
 
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
+        <!-- Code Miss -->
+        <section class="gallery-block" id="code-miss">
+            <div class="gallery-block-header">
+                <h2>Code Miss</h2>
+                <div class="mini-tags"><span>Game</span><span>JavaScript</span><span>A-Frame</span></div>
+            </div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/tD1JW6Uu8x8" title="Code Miss demo" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </section>
 
-        <div class="slide-counter">1 / 2</div>
-      </div>
+        <!-- Steam Library Sorter -->
+        <section class="gallery-block" id="steam-lib-sort-demo">
+            <div class="gallery-block-header">
+                <h2>Steam Library Sorter</h2>
+                <div class="mini-tags"><span>Desktop</span><span>Python</span><span>PyQt5</span></div>
+            </div>
+            <div class="video-embed">
+                <iframe src="https://www.youtube.com/embed/AlBGAnOjYTk" title="Steam Library Sorter demo" loading="lazy" allowfullscreen></iframe>
+            </div>
+        </section>
 
-      <div class="slide-dots" id="dots-steam-lib-sort"></div>
-    </div>
+        <!-- CS2 Skins Database -->
+        <section class="gallery-block page-end" id="cs2skins">
+            <div class="gallery-block-header">
+                <h2>CS2 Skins Database</h2>
+                <div class="mini-tags"><span>Web</span><span>PHP</span><span>SQL</span></div>
+            </div>
+            <div class="slideshow landscape" tabindex="0" aria-roledescription="carousel" aria-label="CS2 Skins Database screenshots">
+                <div class="slides-track">
+                    <div class="slide"><img src="screenshots/cs2-skins/listskins.png" alt="List of skins" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/cs2-skins/addskin.png" alt="Add a skin" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/cs2-skins/updateskin.png" alt="Update a skin" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/cs2-skins/aggregatequery.png" alt="Aggregate query results" loading="lazy"></div>
+                    <div class="slide"><img src="screenshots/cs2-skins/ERDextended.png" alt="Entity relationship diagram" loading="lazy"></div>
+                </div>
+                <button class="slide-arrow prev" aria-label="Previous screenshot">‹</button>
+                <button class="slide-arrow next" aria-label="Next screenshot">›</button>
+                <div class="slide-counter"></div>
+            </div>
+            <div class="slide-dots"></div>
+        </section>
+    </main>
 
-    <div class="gallery-video" id="steam-lib-sort-demo">
-      <iframe 
-        src="https://www.youtube.com/embed/AlBGAnOjYTk?si=-mTzuLIfaLa4UIzp"
-        allowfullscreen>
-      </iframe>
-    </div>
-    
-    <!-- ─────────────────────────────────────────
-         GALLERY BLOCK - CS2 Skins
-    ───────────────────────────────────────────── -->
-    <div class="gallery-block" id="cs2skins">
-      <div class="gallery-block-header">
-        <h2 class="gallery-block-title">Counter-Strike 2 Skins Database</h2>
-        <span class="gallery-block-meta">web · PHP · SQL</span>
-      </div>
+    <footer>
+        <p>© 2026 Dani Zhumasheva</p>
+        <a href="index.html#projects">Back to projects <span aria-hidden="true">↑</span></a>
+    </footer>
 
-      <div class="slideshow landscape" id="slideshow-cs2skins">
-        <div class="slides-track">
+    <script>
+        document.querySelectorAll('.slideshow').forEach((show) => {
+            const track = show.querySelector('.slides-track');
+            const slides = track.querySelectorAll('.slide');
+            const counter = show.querySelector('.slide-counter');
+            const dots = show.nextElementSibling;
+            const total = slides.length;
+            let current = 0;
 
-          <div class="slide">
-            <img src="screenshots/cs2-skins/listskins.png" alt="List Skins" />
-          </div>
+            slides.forEach((_, i) => {
+                const dot = document.createElement('button');
+                dot.type = 'button';
+                dot.setAttribute('aria-label', `Go to screenshot ${i + 1}`);
+                dot.addEventListener('click', () => goTo(i));
+                dots.appendChild(dot);
+            });
 
-          <div class="slide">
-            <img src="screenshots/cs2-skins/addskin.png" alt="Add a Skin" />
-          </div>
+            function goTo(index) {
+                current = (index + total) % total;
+                track.style.transform = `translateX(-${current * 100}%)`;
+                counter.textContent = `${current + 1} / ${total}`;
+                dots.querySelectorAll('button').forEach((d, i) => d.classList.toggle('active', i === current));
+            }
 
-          <div class="slide">
-            <img src="screenshots/cs2-skins/updateskin.png" alt="Update a Skin" />
-          </div>
+            show.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
+            show.querySelector('.next').addEventListener('click', () => goTo(current + 1));
 
-          <div class="slide">
-            <img src="screenshots/cs2-skins/aggregatequery.png" alt="Aggregate Query" />
-          </div>
+            // arrow keys only move the slideshow that has focus
+            show.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') goTo(current - 1);
+                if (e.key === 'ArrowRight') goTo(current + 1);
+            });
 
-          <div class="slide">
-            <img src="screenshots/cs2-skins/ERDextended.png" alt="ERD" />
-          </div>
+            let startX = 0;
+            show.addEventListener('touchstart', (e) => { startX = e.touches[0].clientX; }, { passive: true });
+            show.addEventListener('touchend', (e) => {
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+            });
 
-        </div>
-
-        <!-- Arrows -->
-        <button class="slide-arrow prev" aria-label="Previous">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-        </button>
-        <button class="slide-arrow next" aria-label="Next">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
-        </button>
-
-        <div class="slide-counter">1 / 6</div>
-      </div>
-
-      <div class="slide-dots" id="dots-cs2skins"></div>
-    </div>
-
-  </div><!-- end page-wrapper -->
-
-  <footer>
-    <p>© 2026 <span class="footer-accent">Dani Zhumasheva</span>. Built with HTML & CSS.</p>
-    <p>Hosted on <span class="footer-accent">GitHub Pages</span>.</p>
-  </footer>
-
-  <script>
-
-    function initSlideshow(id) {
-      const slideshow  = document.getElementById(`slideshow-${id}`);
-      const track      = slideshow.querySelector('.slides-track');
-      const slides     = track.querySelectorAll('.slide');
-      const counter    = slideshow.querySelector('.slide-counter');
-      const dotsWrap   = document.getElementById(`dots-${id}`);
-      const total      = slides.length;
-      let current      = 0;
-
-      // Build dots
-      slides.forEach((_, i) => {
-        const dot = document.createElement('div');
-        dot.className = 'dot' + (i === 0 ? ' active' : '');
-        dot.addEventListener('click', () => goTo(i));
-        dotsWrap.appendChild(dot);
-      });
-
-      function goTo(index) {
-        current = (index + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        counter.textContent = `${current + 1} / ${total}`;
-        dotsWrap.querySelectorAll('.dot').forEach((d, i) =>
-          d.classList.toggle('active', i === current)
-        );
-      }
-
-      slideshow.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
-      slideshow.querySelector('.next').addEventListener('click', () => goTo(current + 1));
-
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft')  goTo(current - 1);
-        if (e.key === 'ArrowRight') goTo(current + 1);
-      });
-
-      // Touch swipe
-      let touchStartX = 0;
-      slideshow.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; });
-      slideshow.addEventListener('touchend',   e => {
-        const diff = touchStartX - e.changedTouches[0].clientX;
-        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
-      });
-
-      goTo(0);
-    }
-
-    initSlideshow('habit');
-    initSlideshow('expense');
-    initSlideshow('chicken-warrior');
-    initSlideshow('slaying-goliath');
-    initSlideshow('code-miss');
-    initSlideshow('steam-lib-sort');
-    initSlideshow('cs2skins');
-  </script>
-
+            goTo(0);
+        });
+    </script>
 </body>
 </html>
