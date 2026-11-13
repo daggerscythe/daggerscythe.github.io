@@ -1759,3 +1759,7 @@ footer a {
     object-fit: contain;
     padding: 6% 8%;
 }
+
+.site-header nav a[aria-current="page"]::after {
+    transform: scaleX(1);
+}
