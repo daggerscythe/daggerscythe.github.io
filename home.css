@@ -693,6 +693,27 @@ button, a {
     letter-spacing: -0.02em;
 }
 
+.card-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    margin: 0 0 9px;
+}
+
+.card-title h3 {
+    margin: 0;
+}
+
+.date-tag {
+    padding: 4px 10px;
+    border: 1px solid rgba(49, 54, 56, 0.35);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.6);
+    font: 600 0.8rem var(--mono);
+    white-space: nowrap;
+}
+
 .project-info p {
     max-width: 540px;
     margin: 0;
