@@ -220,15 +220,16 @@
                     </article>
 
                     <article class="project-card reveal">
-                        <a class="project-image" href="gallery.html#slaying-goliath">
-                            <img src="screenshots/thumbnails/goliath.png" alt="Slaying Goliath character selection screen" loading="lazy">
-                            <span class="image-action">View gallery <span aria-hidden="true">→</span></span>
+                        <a class="project-image" href="games/slaying-goliath/" target="_blank" rel="noopener">
+                            <img src="screenshots\slaying-goliath\main_menu.png" alt="Slaying Goliath main menu" loading="lazy">
+                            <span class="image-action">Play game <span aria-hidden="true">↗</span></span>
                         </a>
                         <div class="project-info">
                             <div>
                                 <div class="card-title"><h3>Slaying Goliath</h3><span class="date-tag">Mar 26</span><span class="date-tag">Game Jam</span></div>
-                                <p>A four-player asymmetric 3D combat game built during Hackathon 2026.</p>
-                                <div class="mini-tags"><span>A-Frame</span><span>Three.js</span><span>WebSockets</span></div>
+                                <p>A first-person 3v1 superhero arena brawler that runs in the browser. It started as a 24-hour hackathon game with three teammates, where the challenge was to make a superhero game using a provided dataset: every playable character is a row from a 780-character CSV, sorted into classes by its stats, so each match deals you a different fighter. I wrote the core game logic during the jam, then rebuilt the game on my own into something anyone can play. I fixed the multiplayer sync bugs, added a solo mode with AI bots for every class (steering around cover, leading their shots and healing allies), rebalanced 3v1 combat using simulated bot-vs-bot matches, fixed a generator bug that had buried the real arena, and cut model draw calls by over 90% with a glTF optimization pipeline.</p>
+                                <p class="login-note"><strong>Multiplayer (2–4 players)</strong> isn’t available in the browser version, but it works if one player hosts it on their own computer. Further instructions can be found <a href="coming-soon.html" data-todo="Link to itch.io">here</a>.</p>
+                                <div class="mini-tags"><span>JavaScript</span><span>A-Frame</span><span>Three.js</span><span>WebSockets</span><span>HTML5</span></div>
                             </div>
                             <div class="project-links">
                                 <a href="gallery.html#slaying-goliath">Gallery</a>
